@@ -1,0 +1,20 @@
+#   Ignore .vs and .vscode fodlers. These are local settings stored by visual
+#   studio and visual studio code for a local use only.
+.vs/
+.vscode/
+
+#   Ignore the build folder.  Builds should be contained locally only
+#   as project is being developed, never in repository.
+[Bb]in/
+
+#   Also ignore the obj folder. This folder just holds temporary data used
+#   during hte build process that outputs to the bin folder
+[Oo]bj/
+
+#   Ignore the obj folder
+
+#   Ignore the node_modules folder. Clients should redownload these
+#   using 'npm install' locally instead
+node_modules/
+
+
