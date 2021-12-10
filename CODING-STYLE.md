@@ -2,8 +2,8 @@
 The following sections will outline coding styles to employ when editing various code files within this project.  By setting and following these guidelines, we can help to ensure that all code files remain consistant and clean in design.
 
 The following coding styles can be found within this document:
-1. [C# Coding Style](#c#-coding-style)
-2. [HTML/CSHTML Coding Style](#html-cshtml-coding-style)
+1. [C# Coding Style](#c-coding-style)
+2. [HTML/CSHTML Coding Style](#htmlcshtml-coding-style)
 
 
 ## C# Coding Style
@@ -68,4 +68,4 @@ These guidelines should be followed when creating and/or editing HTML/CSHTML cod
 
 9. Avoid adding unneccessary blank lines.
 
-10. All C# used within `.cshtml` files should following the guidelines found in the [C# Coding Style](#c#-coding-style) section above.
+10. All C# used within `.cshtml` files should following the guidelines found in the [C# Coding Style](#c-coding-style) section above.
