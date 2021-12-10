@@ -23,7 +23,7 @@ namespace NeedsCalloutsWebsite
          *  If you are debugging the application within visual studio, then the
          *  environment variable is set to 'Development' by default.
          *
-         *  If you are running this on a local server for testing, then the 
+         *  If you are running this on a local server for testing, then the
          *  EnvironmentName is set to the value you have configured in your
          *  environment variable for ASPNETCORE_ENVIRONMENT, which should be
          *  'Staging'
@@ -42,8 +42,8 @@ namespace NeedsCalloutsWebsite
              *  Instead of using the IConfiguration object that is passed by
              *  default in the StartUp constructor, we're going to build our own
              *  IConfiguration object.  THe reason we are doing this is because
-             *  the default IConfiguration only uses the appsettings.json file. 
-             *  By building our own, we can load in additional configuration 
+             *  the default IConfiguration only uses the appsettings.json file.
+             *  By building our own, we can load in additional configuration
              *  .json files that we have created.
              */
             var builder = new ConfigurationBuilder()

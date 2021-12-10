@@ -15,19 +15,12 @@ The full source code is avaiablle here on GitHub for those with access to this r
 
 3. From within the same directory restore npm packages with `npm install`
 
-    3.A When the npm install finished, the gulp:defualt task will execute automatically.  This task takes the needed libraries from the npm pacakges such as bootstrap, jquery, etc, and copies them to the /wwwroot/lib directory
+    3.A When the npm install finishes, the `gulp:defualt` gulp task will execute automatically.  This task takes the needed libraries from the npm pacakges such as bootstrap, jquery, etc, and copies them to the /wwwroot/lib directory
 
 Once the above is performed, you should be setup to start development.
 
-##  Database Config
-(coming soon)
-
-## Server Config
-(coming soon)
-
 ## Contributing
 (coming soon)
-
 
 # License
 The source code is licensed under the MIT License.  See the [LICENSE](/LICENSE.md) file for the full license text
