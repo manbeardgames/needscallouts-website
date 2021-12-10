@@ -30,7 +30,7 @@ Once the above is performed, you should be setup to start development.
 
 
 # License
-The source code is licensed under the MIT LIcense.  See the LICENSE file for the full license text
+The source code is licensed under the MIT LIcense.  See the [LICENSE](/LICENSE) file for the full license text
 ```
 The MIT License
 
