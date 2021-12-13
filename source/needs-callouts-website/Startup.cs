@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpOverrides;
@@ -49,7 +50,8 @@ namespace NeedsCalloutsWebsite
             var builder = new ConfigurationBuilder()
                .SetBasePath(env.ContentRootPath)
                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-               .AddJsonFile($"appsettings.{env.EnvironmentName.ToLower()}.json", optional: true, reloadOnChange: true);
+               .AddJsonFile($"appsettings.{env.EnvironmentName.ToLower()}.json", optional: true, reloadOnChange: true)
+               .AddJsonFile($"appsecrets.json", optional: false, reloadOnChange: true);
 
             //  Build the configuration
             Configuration = builder.Build();
@@ -62,6 +64,24 @@ namespace NeedsCalloutsWebsite
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            //  Add authentication
+            services.AddAuthentication(options =>
+            {
+                options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            })
+            .AddCookie(options =>
+            {
+                options.LoginPath = "/login";
+                options.LogoutPath = "/logout";
+            })
+            .AddGoogle(options =>
+            {
+                IConfigurationSection googleConfig = Configuration.GetSection("google");
+
+                options.ClientId = googleConfig["clientid"];
+                options.ClientSecret = googleConfig["clientsecret"];
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -88,6 +108,7 @@ namespace NeedsCalloutsWebsite
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
