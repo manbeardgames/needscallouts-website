@@ -17,4 +17,7 @@
 #   using 'npm install' locally instead
 node_modules/
 
+#   Ignore the app secrets file
+appsecrets.json
+
 
