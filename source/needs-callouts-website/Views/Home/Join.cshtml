@@ -1,26 +1,13 @@
 @{
-    ViewData["Title"] = "How to Join";
-    ViewData["HeaderImage"] = "/images/pages/how-to-join/header-image.png";
-    Layout = "_Layout";
-}
-
-@section Description {
-<meta name="description" content="About the Needs Callouts Free Company" />
-<meta name="author" content="Kanae Sumida" />
-}
-
-@section OpenGraph {
-<meta property="og:locale" content="en-US" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="How to Join" />
-<meta property="og:description" content="How to join the Needs Callouts Free Company" />
-<meta property="og:url" content="https://needscallouts.com/how-to-join" />
-<meta property="og:site_name" content="@ViewData["Title"]" />
-<meta property="og:image" content="/images/pages/how-to-join/header-image.png" />
+    ViewBag.Title = "How to Join";
+    ViewBag.Description = "How to join the Needs Callouts Free Company.";
+    ViewBag.Image = "images/pages/how-to-join/header-image.png";
+    Layout = "Layouts/General/_Layout";
+    ViewBag.Action = ViewContext.RouteData.Values["Action"].ToString();
 }
 
 <main>
-    <partial name="_PageHeader" />
+    <partial name="Layouts/General/_PageHeader" />
 
     <div class="container marketing">
         <div class="row feature">

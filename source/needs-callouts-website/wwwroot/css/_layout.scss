@@ -4,7 +4,7 @@
     Only styles that apply to either the _Layout.cshtml view or globally impact
     the site should go here.
 
-    If you have a style that is for a specific view or module within a view, a 
+    If you have a style that is for a specific view or module within a view, a
     partial sass file should be created for it and added to the site sass file.
 */
 @import "_variables.scss";
@@ -126,40 +126,11 @@ body {
   margin: 5rem 0;
 }
 
-// .featurette-heading {
-//   font-weight: 300;
-//   line-height: 1;
-//   /* rtl:remove */
-//   letter-spacing: -.05rem;
-// }
+
 
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
-
-// .divider {
-//   height: 3rem;
-//   background-color: rgba(0, 0, 0, .1);
-//   border: solid rgba(0, 0, 0, .15);
-//   border-width: 1px 0;
-//   box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-// }
-
-// .quotes {
-//   .col-lg-4 {
-//     margin-bottom: 1.5rem;
-//     text-align: center;
-
-//     p {
-//       margin-right: .75rem;
-//       margin-left: .75rem;
-//     }
-//   }
-
-//   h2 {
-//     font-weight: 400;
-//   }
-// }
 
 .profile-pill {
   background-color: #f1f1f1;

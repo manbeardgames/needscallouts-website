@@ -1,37 +1,14 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
-    Layout = "_Cover";
+    ViewBag.Title = "Needs Callouts Free Company";
+    Layout = "Layouts/Cover/_Layout";
 }
 
-@section Description {
-<meta name="description" content="The official website of the Needs Callouts Free Company in Final Fantasy XIV" />
-<meta name="author" content="Kanae Sumida" />
-}
-
-@section OpenGraph {
-<meta property="og:locale" content="en-US" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Needs Callouts Free Company" />
-<meta property="og:description" content="The official website of the Needs Callouts Free Company in Final Fantasy XIV" />
-<meta property="og:url" content="https://needscallouts.com" />
-<meta property="og:site_name" content="@ViewData["Title"]" />
-<meta property="og:image" content="https://needscallouts.com" />
-}
-
-<div class="cover-container">
-    <div class="cover-inner-container">
-        <div class="spacing-hack mb-auto"></div>
-
-        <main class="mt-auto mb-auto">
-            <h1 class="display-2">Needs Callouts &lt;WOOPS&gt;</h1>
-            <p class="lead">A Final Fantasy XIV Free Company</p>
-            <p class="lead">
-                <a asp-action="About" asp-controller="Home"
-                    class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn More</a>
-            </p>
-        </main>
-        <footer class="mt-auto text-white">
-            <p>Designed with ❤️ by Kanae Sumida</p>
-        </footer>
-    </div>
-</div>
+<main class="mt-auto px-3">
+    <h1>Needs Callouts &lt;WOOPS&gt;</h1>
+    <p class="lead">A Final Fantasy XIV Free Company</p>
+    <p class="lead">
+        <a asp-controller="Home" asp-action="About" class="btn btn-lg btn-secondary fw-bold border-white bg-white">
+            Learn More
+        </a>
+    </p>
+</main>
