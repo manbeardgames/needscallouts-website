@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>NeedsCallouts</RootNamespace>
+  </PropertyGroup>
+
+  <Target Name="CustomBeforeBuild" BeforeTargets="Build">
+    <!-- is node installed? -->
+    <Exec
+      Command="node || echo NodeJS not detected, please visit https://nodejs.org to install."
+      ContinueOnError="false" />
+    <!-- npm is instlaled, so run npm install to ensure all dependencies are available -->
+    <Exec
+      WorkingDirectory="$(ProjectDir)"
+      Command="npm install"
+      ContinueOnError="false" />
+    <!-- npm dependencies installed, run the gulp task for the configuration being used -->
+    <Exec
+      WorkingDirectory="$(ProjectDir)"
+      Command="node_modules\.bin\gulp $(Configuration)"
+      ContinueOnError="false" />
+  </Target>
+
+</Project>
