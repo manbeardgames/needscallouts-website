@@ -1,7 +1,7 @@
 body {
-    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-    background-image: url("/images/pages/home/cover.png");
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/dist/images/pages/home/starlight_2021.png");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;

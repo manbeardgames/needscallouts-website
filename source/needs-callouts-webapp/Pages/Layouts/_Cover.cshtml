@@ -31,14 +31,22 @@ Copyright 2021 Christopher Whitley
 
     <title>@(ViewData["Title"] ?? "Needs Callouts Free Company")</title>
     <partial name="_GoogleAnalytics" />
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/cover.css" />
+    <environment include="Development">
+        <link rel="stylesheet" href="~/dist/css/vendor.css" />
+        <link rel="stylesheet" href="~/dist/css/cover.css" />
+    </environment>
+    <environment include="Production">
+        <link rel="stylesheet" href="~/dist/css/vendor.min.css" />
+        <link rel="stylesheet" href="~/dist/css/cover.min.css" />
+    </environment>
 </head>
 
 <body class="d-flex h-100 text-center text-white bg-dark">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         @RenderBody()
-        <partial name="Layouts/Cover/_Footer" />
+        <footer class="mt-auto text-white-50">
+            <p>Designed with ❤️ by <a href="https://twitter.com/manbeardgames">Christopher Whitley</a></p>
+        </footer>
     </div>
 </body>
 
