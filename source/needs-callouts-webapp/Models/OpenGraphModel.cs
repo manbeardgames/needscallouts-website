@@ -1,4 +1,4 @@
-namespace NeedsCallouts.Components.OpenGraph
+namespace NeedsCallouts
 {
     public class OpenGraphModel
     {

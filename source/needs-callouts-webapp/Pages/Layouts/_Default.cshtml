@@ -19,15 +19,13 @@ Copyright 2021 Christopher Whitley
         content="@(ViewData["Description"] ?? "The official website of the Needs Callouts Free Company.")" />
     <meta name="author" content="Christopher Whitley" />
 
-    <!-- Open Graph -->
-    <meta property="og:local" content="en-US" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Needs Callouts Free Company: @(ViewData["Title"] ?? "")" />
-    <meta property="og:description"
-        content="@(ViewData["Description"] ?? "The official website of the Needs Callouts Free Company.")" />
-    <meta property="og:url" content="@Context.Request.Path" />
-    <meta property="og:site_name" content="Needs Callouts Free Company: @(ViewData["Title"] ?? "")" />
-    <meta property="og:image" content="@(ViewData["Image"] ?? Context.Request.PathBase)" />
+    <vc:open-graph local="en-US",
+             type="website",
+             title="@(ViewBag.Title ?? "Needs Callouts Free Company")"
+             description="@(ViewBag.Description ?? "The official website of the Needs Callouts Free Company")"
+             url="@Context.Request.Path"
+             sitename="@(ViewBag.Title ?? "Needs Callouts Free Company")"
+             image="@(ViewBag.Image ?? Context.Request.PathBase)"></vc:open-graph>  
 
     <title>Needs Callouts Free Company: @(ViewData["Title"] ?? "")</title>
     <partial name="_GoogleAnalytics" />
@@ -54,8 +52,7 @@ Copyright 2021 Christopher Whitley
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a asp-controller="Home" asp-action="About"
-                            class="nav-link @(ViewData["Action"] != null && ViewData["Action"] == "about-us" ? "active" : "")"
-                            class="nav-link @(ViewData["Action"] == "About" ? "active" : "")"
+                            class="nav-link @(ViewBag.Action == "About" ? "active" : "")"
                             aria-current="@(ViewBag.Action == "About" ? "page" : "false")">About Us</a>
                     </li>
                     <li class="nav-item">
@@ -84,8 +81,38 @@ Copyright 2021 Christopher Whitley
         </div>
     </nav>
     @RenderBody()
-    <partial name="Layouts/General/_Footer" />
-    <partial name="_GlobalScripts" />
+    <footer class="pb-2 pt-5 bg-dark">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/"
+                        aria-label="Needs Callouts">
+                        <img class="img-fluid" width="50" src="~/images/spriggan.png" alt="Spriggan">
+                        <span class="fs-5 text-light">It's Just Like Normal Mode</span>
+                    </a>
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2">
+                            Designed with ❤️ by Christopher Whitley
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-8 offset-lg-1 text-muted">
+                    <p class="text-centered">
+                        FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.
+                        © SQUARE ENIX CO., LTD. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <environment include="Staging,Development">
+        <script src="~/dist/js/vendor.js"></script>
+    </environment>
+    <environment include="Production">
+        <script src="~/dist/js/vendor.min.js"></script>
+    </environment>
+    <script src="~/js/site.js"></script>
+
     @RenderSection("Scripts", required: false)
 </body>
 

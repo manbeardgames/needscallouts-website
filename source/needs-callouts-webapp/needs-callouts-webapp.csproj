@@ -3,6 +3,7 @@
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
         <RootNamespace>NeedsCallouts</RootNamespace>
+        <AssemblyName>NeedsCallouts</AssemblyName>
     </PropertyGroup>
 
     <Target Name="CustomBeforeBuild" BeforeTargets="Build">
