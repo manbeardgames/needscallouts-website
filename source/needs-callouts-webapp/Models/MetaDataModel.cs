@@ -1,6 +1,6 @@
-namespace NeedsCallouts
+namespace NeedsCallouts.Models
 {
-    public class OpenGraphModel
+    public class MetaDataModel
     {
         public string Local { get; set; }
         public string Type { get; set; }

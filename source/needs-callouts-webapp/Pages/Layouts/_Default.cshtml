@@ -15,19 +15,19 @@ Copyright 2021 Christopher Whitley
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description"
-        content="@(ViewData["Description"] ?? "The official website of the Needs Callouts Free Company.")" />
-    <meta name="author" content="Christopher Whitley" />
+    <meta name="description" content="@(ViewBag.Meta.Description ?? "The official website of the Needs Callouts Free Company")" />
+    <meta name="author" content="@(ViewBag.Meta.Author ?? "Christopher Whitley")" />
 
-    <vc:open-graph local="en-US",
-             type="website",
-             title="@(ViewBag.Title ?? "Needs Callouts Free Company")"
-             description="@(ViewBag.Description ?? "The official website of the Needs Callouts Free Company")"
-             url="@Context.Request.Path"
-             sitename="@(ViewBag.Title ?? "Needs Callouts Free Company")"
-             image="@(ViewBag.Image ?? Context.Request.PathBase)"></vc:open-graph>  
+    <!-- Open Graph -->
+    <meta property="og:local" content="en-US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="@(ViewBag.Meta.Title ?? "Needs Callouts Free Company")" />
+    <meta property="og:description" content="@(ViewBag.Meta.Description ?? "The official website of the Needs Callouts Free Company")" />
+    <meta property="og:url" content="@Context.Request.Path" />
+    <meta property="og:site_name" content="Needs Callouts Free Company" />
+    <meta property="og:image" content="@ViewBag.Meta.OGImage" />
 
-    <title>Needs Callouts Free Company: @(ViewData["Title"] ?? "")</title>
+    <title>@(ViewBag.Meta.Title ?? "Needs Callouts Free Company")</title>
     <partial name="_GoogleAnalytics" />
     <environment include="Development">
         <link rel="stylesheet" href="~/dist/css/vendor.css" />
