@@ -1,0 +1,11 @@
+{
+    "meta": {
+        "description": "The official website of the It's Just Like Normal Mode FFXIV raid static.",
+        "author": "Christopher Whitley (https://twitter.com/manbeardgames",
+        "local": "en-US",
+        "type": "website",
+        "url": "https://localhost:3000",
+        "siteName": "It's Just Like Normal Mode",
+        "image": "/image/og-spriggan"
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "needs-callouts-website",
+  "version": "0.0.1",
+  "description": "Express JS website for the Needs Callouts Free Comapny",
+  "main": "./app/app.js",
+  "scripts": {
+    "init": "npm install && gulp build",
+    "watch-app": "nodemon ./app/app.js --ext *",
+    "watch-scss": "gulp dev"
+  },
+  "keywords": [],
+  "author": "Christopher Whitley",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-ejs-layouts": "^2.5.1",
+    "http-errors": "^2.0.0",
+    "marked": "^4.0.12",
+    "moment": "^2.29.1",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.0"
+  }
+}
