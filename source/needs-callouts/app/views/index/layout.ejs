@@ -44,14 +44,23 @@ https://twitter.com/manbeardgames
         rel="stylesheet">
 
 
-    <link rel="stylesheet" href="/css/landing.css" />
+    <link rel="stylesheet" href="/css/site.css" />
 </head>
 
 <body>
     <%- include('../partials/_topnav'); %>
-        <%- include('./_carousel'); %>
-            <div class="width-100 display-flex flex-row justify-center">
-                <img src="/images/bottom-border-image.webp" style="width: 100%;" />
+    <%- include('./_carousel'); %>
+    <main class="display-flex flex-row justify-content-center">
+        <div class="container">
+            <img src="/images/bottom-border-image.webp" style="width: 100%;" />
+            <div class="display-flex flex-row flex-wrap">
+                <div class="flex-80">Test 80</div>
+                <div class="flex-20">Test 20</div>
+            </div>
+        </div>
+    </main>
+       <!--     <div class="width-100 display-flex flex-row justify-center">
+                
             </div>
             <main class="width-100">
 
@@ -73,7 +82,7 @@ https://twitter.com/manbeardgames
                     <div id="gallery">gallery</div>
                     <div id="meet-the-officers">meet the officers</div>
                     <div id="message-us">
-                        <%- include('./_message-us'); %>
+                        <%#- include('./_message-us'); %>
                     </div>
                     <div id="illustration-seperator-2">
                         <div></div>
@@ -81,17 +90,10 @@ https://twitter.com/manbeardgames
                     <div id="fc-house-tour">fc house tour</div>
                 </div>
 
-                <!-- <section id="split-container">
-            <%#- include('./_about'); %>
-            <div id="latest-news">
-                <img style="opacity: 1;" src="/images/kanae-gon-ryu.webp" />
-            </div>
-        </section> -->
-
                 </section>
             </main>
             </div>
-            <div class="container"></div>
+            <div class="container"></div> -->
 </body>
 
 </html>

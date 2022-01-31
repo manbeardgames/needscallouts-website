@@ -1,3 +1,6 @@
+//
+//  Colors
+// -----------------------------------------------------------------------------
 $black: #293039;
 $white: #e7ebf0;
 $blue: #478deb;
@@ -6,20 +9,45 @@ $green: #a7e8db;
 $pink: #ff8e99;
 $purple: #63628c;
 
+
+//  
+//  Font
+// -----------------------------------------------------------------------------
 $font-spartan: 'Spartan', sans-serif;
 $font-nuinto: "Nunito", sans-serif;
 
-$top-nav-height: 64px;
-$transition-short: 50ms ease-in-out;
-$transition: 250ms ease-out;
-$transition-long: 500ms ease-out;
+$font-weight-thin: 100;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-heavy: 900;
 
+$font-size-base: 1rem;
+$font-size-small: $font-size-base * 0.75;
+$font-size-regular: $font-size-base;
+$font-size-large: $font-size-base * 1.25;
+$font-size-x-large: $font-size-base * 1.75;
+
+
+//
+//  Media Break Points
+// -----------------------------------------------------------------------------
 $breakpoint-small: 576;
 $breakpoint-medium: 768px;
 $breakpoint-large: 992x;
 $breakpoint-xlarge: 1200px;
 
 $media-query-breakpoint: 992px;
+
+
+
+$top-nav-height: 64px;
+$transition-short: 50ms ease-in-out;
+$transition: 250ms ease-out;
+$transition-long: 500ms ease-out;
+
+
 
 // //  Colors
 // $black: #293039;

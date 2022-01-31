@@ -1,0 +1,81 @@
+@use '../abstracts/variables' as *;
+
+//  .bold-400 through bold-900
+.font-weight-thin {
+    font-weight: $font-weight-thin;
+}
+
+.font-weight-light {
+    font-weight: $font-weight-light;
+}
+
+.font-weight-regular {
+    font-weight: $font-weight-regular;
+}
+
+.font-weight-medium {
+    font-weight: $font-weight-medium;
+}
+
+.font-weight-bold {
+    font-weight: $font-weight-bold;
+}
+
+.font-weight-heavy {
+    font-weight: $font-weight-heavy;
+}
+
+
+// -----------------------------------------------------------------------------
+//  h1 - h7
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: $font-weight-heavy;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+    h1 {
+        font-size: calc(1em + 1.5vw);
+    }
+
+    h2 {
+        font-size: calc(0.75em + 0.9vw);
+    }
+
+    h3 {
+        font-size: calc(0.5em + 0.75vw);
+    }
+}
+// -----------------------------------------------------------------------------
+

@@ -1,0 +1,16 @@
+@use '../abstracts/variables' as *;
+
+html {
+    font-family: $font-spartan;
+    font-size: $font-size-regular;
+    font-weight: $font-weight-light;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    max-width: 100vw;
+    background: $white;
+    color: $black;
+    padding-top: $top-nav-height;
+}

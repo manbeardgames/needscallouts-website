@@ -1,7 +1,442 @@
-@use './variables' as *;
 @use './reset';
-@use './root';
-@use './headings';
-@use './buttons';
-@use './header';
-@use './slideshow';
+
+//
+//  Colors Variables
+// -----------------------------------------------------------------------------
+$black: #293039;
+$white: #e7ebf0;
+$blue: #478deb;
+$yellow: #fdb165;
+$green: #a7e8db;
+$pink: #ff8e99;
+$purple: #63628c;
+
+//
+//  Font Variables
+// -----------------------------------------------------------------------------
+$font-spartan: 'Spartan', sans-serif;
+$font-nuinto: 'Nunito', sans-serif;
+
+$font-weight-thin: 100;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-heavy: 900;
+
+$font-size-base: 1rem;
+$font-size-small: $font-size-base * 0.75;
+$font-size-regular: $font-size-base;
+$font-size-large: $font-size-base * 1.25;
+$font-size-x-large: $font-size-base * 1.75;
+
+//
+//  Media Break Point Variables
+// -----------------------------------------------------------------------------
+$breakpoint-small: 576;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992x;
+$breakpoint-xlarge: 1200px;
+
+$media-query-breakpoint: 992px;
+
+$top-nav-height: 64px;
+$transition-short: 50ms ease-in-out;
+$transition: 250ms ease-out;
+$transition-long: 500ms ease-out;
+
+//
+//  CORE
+// -----------------------------------------------------------------------------
+html {
+    font-family: $font-spartan;
+    font-size: $font-size-regular;
+    font-weight: $font-weight-light;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    background: $white;
+    color: $black;
+    padding-top: $top-nav-height;
+}
+
+//
+//  Typography
+// -----------------------------------------------------------------------------
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: $font-weight-heavy;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.75rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+h5 {
+    font-size: 1.25rem;
+}
+h6 {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+    h1 {
+        font-size: calc(1em + 1.5vw);
+    }
+    h2 {
+        font-size: calc(0.75em + 0.9vw);
+    }
+    h3 {
+        font-size: calc(0.5em + 0.75vw);
+    }
+}
+
+//
+//  Utilities
+// -----------------------------------------------------------------------------
+.container {
+    width: 100%;
+
+    @media screen and (min-width: $breakpoint-small) {
+        width: 540px;
+    }
+
+    @media screen and (min-width: $breakpoint-medium) {
+        width: 720px;
+    }
+
+    @media screen and (min-width: $breakpoint-large) {
+        width: 960px;
+    }
+
+    @media screen and (min-width: $breakpoint-xlarge) {
+        width: 1140px;
+    }
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-20 {
+    flex: 20;
+}
+
+.flex-80 {
+    flex: 80;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+//
+//  Top Navigation Bar
+// -----------------------------------------------------------------------------
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    background-color: $black;
+    color: $white;
+    box-shadow: -2px 2px 8px 0px $black;
+    height: $top-nav-height;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: $top-nav-height;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .brand {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            padding: 5px;
+            height: 100%;
+
+            img {
+                align-self: center;
+                height: 100%;
+                object-fit: scale-down;
+                margin-right: 1rem;
+            }
+
+            h1 {
+                align-self: center;
+                font-weight: $font-weight-heavy;
+                margin: 0;
+            }
+        }
+
+        #menu-icon {
+            padding: 5px 7px 3px 7px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: $transition-short;
+
+            svg {
+                height: $font-size-base;
+                color: $white;
+            }
+
+            &:hover {
+                background-color: $green;
+
+                svg {
+                    color: $blue;
+                }
+            }
+        }
+
+        #menu-button,
+        #menu-icon {
+            display: none;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                display: inline-block;
+
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    padding: 8px 30px;
+                    border-radius: 7px;
+                    transition: $transition-short;
+
+                    &:hover,
+                    &:active {
+                        color: $blue;
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+    .top-nav {
+        nav {
+            ul {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                text-align: center;
+                width: 100%;
+                height: calc(100vh - $top-nav-height);
+                margin-top: $top-nav-height;
+                background-color: $black;
+                display: none;
+
+                li {
+                    display: block;
+                    padding: 10px 15px;
+
+                    a {
+                        display: block;
+                        padding: 10px 0;
+                    }
+                }
+            }
+
+            #menu-icon {
+                display: block;
+            }
+
+            #menu-button:checked {
+                & ~ ul {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+//
+//  Carousel
+// -----------------------------------------------------------------------------
+$totalImages: 11;
+$animationDelay: 5s;
+$totalAnimationTime: $totalImages * $animationDelay;
+
+.carousel {
+    position: relative;
+    //  Width and height set to give a 16:9 (0.5625) aspect ratio
+    width: 100vw;
+    height: 56.25vw;
+
+    //  Depending ont eh screen size, however, do not allow the height to extend
+    //  beyond the height of the view.
+    max-height: calc(100vh - $top-nav-height);
+
+    background-color: $black;
+    border-bottom: 1px solid $black;
+    box-shadow: -2px 2px 8px 0px $black;
+    overflow: hidden;
+
+    #carousel-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 56.25vw;
+        max-height: calc(100vh - $top-nav-height);
+        background-repeat: repeat;
+        background-image: url('/images/pattern.png');
+        z-index: 997;
+    }
+
+    .carousel-image {
+        width: 100vw;
+        height: 56.25vw;
+        max-height: calc(100vh - $top-nav-height);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        animation: imageAnimation $totalAnimationTime linear infinite;
+        animation-delay: 0;
+
+        @for $i from 0 through $totalImages {
+            &:nth-of-type(#{$i + 1}) {
+                animation-delay: calc($animationDelay * $i);
+            }
+        }
+    }
+
+    #carousel-title-container {
+        z-index: 998;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1,
+        h3 {
+            text-shadow: -0.05em 0.02em $black, -0.08em 0.04em $pink;
+        }
+
+        a {
+            padding: 0.5rem 1rem;
+            background-color: $blue;
+            color: $white;
+            border: 1px solid $white;
+            border-radius: 0.3rem;
+            text-decoration: none;
+            font-size: $font-size-large;
+            font-weight: $font-weight-heavy;
+
+            &:hover,
+            &:active {
+                background-color: $black;
+                color: $white;
+            }
+
+            @media screen and (max-width: $breakpoint-medium) {
+                font-size: $font-size-regular;
+            }
+        }
+    }
+
+    @keyframes imageAnimation {
+        0% {
+            filter: blur(12px);
+        }
+        10% {
+            opacity: 1;
+            filter: blur(0);
+        }
+        20% {
+            opacity: 1;
+        }
+        30% {
+            opacity: 0;
+        }
+        40% {
+            transform: scale(1.2);
+        }
+    }
+}
+
+// .top-nav nav {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     height: $top-nav-height;
+//     padding-left: 15px;
+//     padding-right: 15px;
+// }
+
+// .top-nav nav .brand {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: nowrap;
+//     padding: 5px;
+//     height: 100%;
+// }
+
+// .top-nav nav .brand img {
+//     align-self: center;
+//     height: 100%;
+//     object-fit: scale-down;
+//     margin-right: 1rem;
+// }
+
+// .top-nav nav .brand h1 {
+//     align-self: center;
+//     font-weight: $font-weight-heavy;
+// }
+
+// @use './variables' as *;
+// @use './reset';
+// @use './root';
+// @use './headings';
+// @use './buttons';
+// @use './header';
+// @use './slideshow';
