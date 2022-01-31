@@ -1,0 +1,257 @@
+@use './variables' as *;
+@use './reset';
+@use './root';
+@use './utilities';
+@use './headings';
+@use './topnav';
+
+// The total number of images in the carousel
+$totalImages: 11;
+
+//  The total amount of time to delay between each image
+$animationDelay: 5s;
+
+//  The total amount of time for all animations to play
+$totalAnimationTime: $totalImages * $animationDelay;
+
+.carousel {
+    position: relative;
+    //  Width and height set to give a 16:9 (0.5625) aspect ratio to images
+    width: 100vw;
+    height: 56.25vw;
+    max-width: 100vw;
+
+    //  Depending on screen size, however, do not allow height to extend past
+    //  the height of the view.
+    max-height: calc(100vh - $top-nav-height);
+    // margin-top: $top-nav-height;
+
+    background-color: $black;
+    border-bottom: 1px solid $black;
+    box-shadow: -2px 2px 8px 0px $black;
+    overflow: hidden;
+
+    #carousel-title-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 998;
+
+        #carousel-title,
+        #carousel-subtitle {
+            text-shadow: -0.05em 0.02em $black, -0.08em 0.04em $pink;
+        }
+
+        #learn-more-button {
+            padding: 0.5rem 1rem;
+            border-radius: 0.3rem;
+            border-top-right-radius: 90deg;
+            font-size: 1.25rem;
+            text-decoration: none;
+            font-weight: 700;
+            position: relative;
+
+            background-color: $white;
+            color: $black;
+            border: 1px solid $black;
+
+            transition: $transition-short;
+
+            &:hover {
+                background-color: $blue;
+                color: $white;
+                border-color: $pink;
+            }
+        }
+    }
+
+    #carousel-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 56.25vw;
+        max-height: 100vh;
+        background-repeat: repeat;
+        background-image: url('/images/pattern.png');
+        z-index: 997;
+    }
+
+    img {
+        width: 100vw;
+        height: 56.25vw;
+        max-height: 100hv;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        opacity: 0;
+        animation: imageAnimation $totalAnimationTime linear infinite 0s;
+        animation-delay: 0;
+
+        @for $i from 0 through $totalImages {
+            &:nth-of-type(#{$i + 1}) {
+                animation-delay: calc($animationDelay * $i);
+            }
+        }
+    }
+
+    @keyframes imageAnimation {
+        0% {
+            filter: blur(12px);
+        }
+        10% {
+            opacity: 1;
+            filter: blur(0);
+        }
+        20% {
+            opacity: 1;
+        }
+        30% {
+            opacity: 0;
+        }
+        40% {
+            transform: scale(1.2);
+        }
+    }
+
+    @keyframes titleAnimation {
+        0% {
+            opacity: 0;
+        }
+        8% {
+            opacity: 1;
+        }
+        17% {
+            opacity: 1;
+        }
+        19% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+}
+
+.image-border-bottom {
+    width: 100%;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+    #layout-grid {
+        display: grid;
+        grid-template-areas:
+        'moreInfo latestNews'
+        'whoAreWe latestNews'
+        'whatDoWeOffer latestNews'
+        'illustrationSeperator1 illustrationSeperator1'
+        'careToJoinUs careToJoinUs'
+        'gallery gallery'
+        'meetTheOfficers meetTheOfficers'
+        'messageUs messageUs'
+        'illustrationSeperator2 illustrationSeperator2'
+        'fcHouseTour fcHouseTour'
+    }
+
+    #more-info {
+        grid-area: moreInfo;
+    }
+
+    #latest-news {
+        grid-area: latestNews;
+    }
+
+    #who-are-we {
+        grid-area: whoAreWe;
+    }
+
+    #what-do-we-offer {
+        grid-area: whatDoWeOffer;
+    }
+
+    #illustration-seperator-1 {
+        grid-area: illustrationSeperator1;
+        div {
+            width: 100vw;
+            height: 56.25vw;
+            max-width: 100vw;
+            background-image: url('/images/kanae-laughing.webp');
+            background-size: cover;
+        }
+    }
+
+    #care-to-join-us {
+        grid-area: careToJoinUs;
+    }
+
+    #gallery {
+        grid-area: gallery;
+    }
+
+    #meet-the-officers {
+        grid-area: meetTheOfficers;
+    }
+
+    #message-us {
+        grid-area: messageUs;
+
+        input {
+            border: 1px solid $purple;
+            padding: 0.5rem 1rem;
+
+            &:not(textarea) {
+                height: 60px;
+            }
+
+            &::placeholder {
+                color: $purple;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    #illustration-seperator-2 {
+        grid-area: illustrationSeperator2;
+        div {
+            width: 100vw;
+            height: 56.25vw;
+            max-width: 100vw;
+            background-image: url('/images/hero.webp');
+            background-size: cover;
+        }
+    }
+
+    #fc-house-tour {
+        grid-area: fcHouseTour;
+    }
+}
+
+@media screen and(max-width: $media-query-breakpoint) {
+
+}

@@ -18,11 +18,15 @@ router.get('/', (request, response) => {
     viewModel.meta.local = 'en-US';
     viewModel.meta.image = '/image/og-spriggan.webp';
 
-    //  Set the path to the layout EJS file to use for this view.
-    viewModel.layout = path.join(request.app.get('layouts'), 'default.ejs');
+    viewModel.body = 'index';
 
-    //  Render the view
-    response.render('index', {viewModel});
+    response.render('index/layout', viewModel);
+
+    // //  Set the path to the layout EJS file to use for this view.
+    // viewModel.layout = path.join(request.app.get('layouts'), 'default.ejs');
+
+    // //  Render the view
+    // response.render('index', {viewModel});
 });
 
 module.exports = router;

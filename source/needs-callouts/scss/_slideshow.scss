@@ -1,0 +1,122 @@
+@use './variables' as *;
+
+$totalImages: 11;
+$animationDelay: 5s;
+$totalAnimationTime: $totalImages * $animationDelay;
+
+.carousel {
+    position: relative;
+    //  Width and height set to give a 16:9 (0.5625) aspect ratio to images
+    width: 100vw;
+    height: 56.25vw;
+
+    //  Depending on screen size, however, do not allow height to extend past
+    //  the height of the view.
+    max-height: calc(100vh - $top-nav-height);
+    margin-top: $top-nav-height;
+
+    background-color: $black;
+    border-bottom: 1px solid $black;
+    box-shadow: -2px 2px 8px 0px $black;
+    overflow: hidden;
+
+    .carousel-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 56.25vw;
+        max-height: 100vh;
+        background-repeat:repeat;
+        background-image: url('/images/pattern.png');
+        z-index: 997;
+    }
+
+    .carousel-image {
+        width: 100vw;
+        height: 56.25vw;
+        max-height: 100hv;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        opacity: 0;
+        animation: imageAnimation $totalAnimationTime linear infinite 0s;
+        animation-delay: 0;
+        filter: brightness(0%);
+
+        &:nth-of-type(1) {
+            opacity: 0;
+        }
+
+        @for $i from 0 through $totalImages {
+            &:nth-of-type(#{$i + 1}) {
+                animation-delay: calc($animationDelay * $i);
+            }
+        }
+    }
+
+    div {
+         z-index: 998;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .carousel-title {
+            text-shadow: -0.05em 0.02em $black, -0.08em 0.04em $pink;
+        }
+    }
+
+    @keyframes imageAnimation {
+        0% {
+            filter: blur(12px);
+        }
+        10% {
+            opacity: 1;
+            filter: blur(0);
+        }
+        20% {
+            opacity: 1;
+        }
+        30% {
+            opacity: 0;
+        }
+        40% {
+            transform: scale(1.2);
+        }
+    }
+
+
+    @keyframes titleAnimation {
+        0% {
+            opacity: 0;
+        }
+        8% {
+            opacity: 1;
+        }
+        17% {
+            opacity: 1;
+        }
+        19% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+}

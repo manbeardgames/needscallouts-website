@@ -1,0 +1,94 @@
+@use './variables' as *;
+
+.container {
+    width: 100%;
+
+    @media screen and (min-width: $breakpoint-small) {
+        width: 540px;
+    }
+
+    @media screen and (min-width: $breakpoint-medium) {
+        width: 720px;
+    }
+
+    @media screen and (min-width: $breakpoint-large) {
+        width: 960px;
+    }
+
+    @media screen and (min-width: $breakpoint-xlarge) {
+        width: 1140px;
+    }
+}
+
+.width-100 {
+    width: 100%;
+}
+
+//--------------------------------------------
+//  Flex stuff
+//--------------------------------------------
+.display-flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.flex-basis-0 {
+    flex-basis: 0;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.input-purple {
+    border: 1px solid $purple;
+    padding: 0.5rem 1rem;
+
+    &:not(textarea) {
+        height: 60px;
+    }
+
+    &::placeholder {
+        color: $purple;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+.mx-1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+//--------------------------------------------
+//  Headings
+//--------------------------------------------
+.heading-purple {
+    width: 100%;
+    padding-left: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: $purple;
+    color: $white;
+    font-size: 36px;
+    font-weight: 900;
+}

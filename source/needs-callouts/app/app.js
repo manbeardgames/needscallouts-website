@@ -7,8 +7,23 @@ const fs = require('fs');
 
 const app = express();
 
-//  Load any configurations or variables that need to be set at an app level
+const env = process.env.NODE_ENV || 'development';
+let livereload;
+if (env === 'development') {
+    console.log('reached');
+    livereload = require('livereload');
+    const liveServer = livereload.createServer();
+    liveServer.watch(path.join(__dirname));
 
+    liveServer.server.once('connection', () => {
+        setTimeout(() => {
+            liveServer.refresh('/');
+        }, 100);
+    });
+
+    app.use(require('connect-livereload')());
+}
+//  Load any configurations or variables that need to be set at an app level
 
 //  Set the local values
 app.set('meta', config.meta);
@@ -17,11 +32,11 @@ app.set('meta', config.meta);
 const PORT = process.env.PORT || 3000;
 
 //  Configure EJS view engine
-app.engine('ejs', require('./rendering-engine'));
+// app.engine('ejs', require('./rendering-engine'));
 // app.engine('custom-renderer', require('./rendering-engine'));
 app.set('view engine', 'ejs');
 // app.use(expressLayouts);
-app.set('layouts', path.join(__dirname, 'views', 'layouts'));
+// app.set('layouts', path.join(__dirname, 'views', 'layouts'));
 
 //  Set the default 'views' directory as the one inside the 'app' directory.
 app.set('views', path.join(__dirname, 'views'));

@@ -1,14 +1,23 @@
-// @use "./variables" as *;
+@use "./variables" as *;
 
-// html {
-//     font-family: "Nunito", sans-serif;
-//     font-size: 18px;
-//     font-weight: 200;
-// }
+html {
+    // font-family: "Nunito", sans-serif;
+    font-family: 'Spartan', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    scroll-behavior: smooth;
+}
 
-// body {
-//     padding-top: $top-nav-height;
-//     min-height: 100vh;
-//     background: $bg-color-secondary;
-//     color: $text-color-black;
+body {
+    width: 100vh;
+    max-width: 100vh;
+    overflow-x: hidden;
+    min-height: 200vh;
+    background: $white;
+    color: $black;
+    padding-top: $top-nav-height;
+}
+
+// main {
+//     margin-top: $top-nav-height;
 // }
