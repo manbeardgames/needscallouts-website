@@ -20,7 +20,7 @@ $font-nuinto: 'Nunito', sans-serif;
 $font-weight-thin: 100;
 $font-weight-light: 300;
 $font-weight-regular: 400;
-$font-weight-medium: 500;
+$font-weight-medium: 600;
 $font-weight-bold: 700;
 $font-weight-heavy: 900;
 
@@ -60,6 +60,7 @@ body {
     background: $white;
     color: $black;
     padding-top: $top-nav-height;
+    line-height: 24px;
 }
 
 //
@@ -139,13 +140,27 @@ h6 {
     flex-direction: row;
 }
 
-.flex-20 {
-    flex: 20;
+.flex-column {
+    flex-direction: column;
 }
 
-.flex-80 {
-    flex: 80;
+@for $i from 1 through 10 {
+    .flex-#{$i * 10} {
+        flex: #{$i * 10};
+    }
 }
+
+// .flex-10 {
+//     flex: 10;
+// }
+
+// .flex-20 {
+//     flex: 20;
+// }
+
+// .flex-80 {
+//     flex: 80;
+// }
 
 .flex-wrap {
     flex-wrap: wrap;
@@ -153,6 +168,48 @@ h6 {
 
 .justify-content-center {
     justify-content: center;
+}
+
+//
+//  Utilities
+// -----------------------------------------------------------------------------
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    width: fit-content;
+    padding-left: 32px;
+    font-size: $font-size-regular;
+    text-decoration: none;
+    font-weight: $font-weight-bold;
+    position: relative;
+
+    &.button-dark {
+        background-color: $black;
+        color: $white;
+
+        &:after {
+            content: '';
+            background-color: $white;
+            background-image: url('/images/site/buttons/button-dark-right.webp');
+            background-size: 48px 64px;
+            display: inline-block;
+            width: 48px;
+            height: 64px
+        }
+
+        &:hover {
+            background-color: $blue;
+            color: $white;
+
+            &::after {
+                background-image: url('/images/site/buttons/button-dark-right-hover.webp');
+            }
+        }
+    }
 }
 
 
@@ -416,8 +473,82 @@ $totalAnimationTime: $totalImages * $animationDelay;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding-left: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    gap: 1.5rem;
+
+    .news-preview-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.0rem;
+
+        .news-preview-image {
+            position: relative;
+            img {
+                width: 100%;
+            }
+
+            h1 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 0.5rem 0rem;
+                font-size: $font-size-small;
+                font-weight: $font-weight-medium;
+                width: 120px;
+                text-align: center;    
+                
+                &.news {
+                    background-color: $blue;
+                    color: $white;
+                }
+    
+                &.events {
+                    background-color: $yellow;
+                    color: $black;
+                }
+    
+                &.tips {
+                    background-color: $green;
+                    color: $black;
+                }
+    
+                &.watch {
+                    background-color: $pink;
+                    color: $black;
+                }                
+            }
+        }
+
+        .news-preview-content {
+            color: $black;
+    
+            h1 {
+                font-size: $font-size-large;
+            }
+            
+        }
+
+        .news-preview-link {
+            color: $black;
+            text-decoration: none;
+            font-weight: $font-weight-medium;
+            
+            .right-arrow {
+                color: $blue;
+                height: 32px;
+                vertical-align: middle;
+            }
+
+            &:hover,
+            &:active {
+                color: $blue;
+            }
+    
+
+        }
+    }
 }
 // .top-nav nav {
 //     display: flex;

@@ -1,5 +1,16 @@
-<div class="display-flex flex-columns justify-content-center">
-    Test
-    Test
-    Test
+<div class="news-preview-container">
+    <div class="news-preview-image">
+        <img src="<%- article.image; %>" />
+        <h1 class="<%- article.type.toLowerCase(); %>"><%- article.type %></h1>
+    </div>
+    <div class="news-preview-content">
+        <h1><%- article.title %></h1>
+        <p><%- article.description %></p>
+    </div>
+    <a class="news-preview-link" href="#">
+        I WANT TO READ MORE 
+        <svg xmlns="http://www.w3.org/2000/svg" class="right-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+    </a>
 </div>
