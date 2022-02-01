@@ -155,6 +155,7 @@ h6 {
     justify-content: center;
 }
 
+
 //
 //  Top Navigation Bar
 // -----------------------------------------------------------------------------
@@ -404,6 +405,20 @@ $totalAnimationTime: $totalImages * $animationDelay;
     }
 }
 
+
+//
+//  Latest News
+// -----------------------------------------------------------------------------
+#latest-news {
+    border: none;
+    border-left: 2px dashed $black;
+    border-bottom: 2px solid $black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+}
 // .top-nav nav {
 //     display: flex;
 //     justify-content: space-between;
