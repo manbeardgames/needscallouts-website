@@ -150,17 +150,6 @@ h6 {
     }
 }
 
-// .flex-10 {
-//     flex: 10;
-// }
-
-// .flex-20 {
-//     flex: 20;
-// }
-
-// .flex-80 {
-//     flex: 80;
-// }
 
 .flex-wrap {
     flex-wrap: wrap;
@@ -497,44 +486,44 @@ $totalAnimationTime: $totalImages * $animationDelay;
                 font-size: $font-size-small;
                 font-weight: $font-weight-medium;
                 width: 120px;
-                text-align: center;    
-                
+                text-align: center;
+
                 &.news {
                     background-color: $blue;
                     color: $white;
                 }
-    
+
                 &.events {
                     background-color: $yellow;
                     color: $black;
                 }
-    
+
                 &.tips {
                     background-color: $green;
                     color: $black;
                 }
-    
+
                 &.watch {
                     background-color: $pink;
                     color: $black;
-                }                
+                }
             }
         }
 
         .news-preview-content {
             color: $black;
-    
+
             h1 {
                 font-size: $font-size-large;
             }
-            
+
         }
 
         .news-preview-link {
             color: $black;
             text-decoration: none;
             font-weight: $font-weight-medium;
-            
+
             .right-arrow {
                 color: $blue;
                 height: 32px;
@@ -545,44 +534,8 @@ $totalAnimationTime: $totalImages * $animationDelay;
             &:active {
                 color: $blue;
             }
-    
+
 
         }
     }
 }
-// .top-nav nav {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     height: $top-nav-height;
-//     padding-left: 15px;
-//     padding-right: 15px;
-// }
-
-// .top-nav nav .brand {
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: nowrap;
-//     padding: 5px;
-//     height: 100%;
-// }
-
-// .top-nav nav .brand img {
-//     align-self: center;
-//     height: 100%;
-//     object-fit: scale-down;
-//     margin-right: 1rem;
-// }
-
-// .top-nav nav .brand h1 {
-//     align-self: center;
-//     font-weight: $font-weight-heavy;
-// }
-
-// @use './variables' as *;
-// @use './reset';
-// @use './root';
-// @use './headings';
-// @use './buttons';
-// @use './header';
-// @use './slideshow';

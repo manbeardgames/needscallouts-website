@@ -1,5 +1,6 @@
+
 //
-//  Colors
+//  Colors Variables
 // -----------------------------------------------------------------------------
 $black: #293039;
 $white: #e7ebf0;
@@ -9,17 +10,16 @@ $green: #a7e8db;
 $pink: #ff8e99;
 $purple: #63628c;
 
-
-//  
-//  Font
+//
+//  Font Variables
 // -----------------------------------------------------------------------------
 $font-spartan: 'Spartan', sans-serif;
-$font-nuinto: "Nunito", sans-serif;
+$font-nuinto: 'Nunito', sans-serif;
 
 $font-weight-thin: 100;
 $font-weight-light: 300;
 $font-weight-regular: 400;
-$font-weight-medium: 500;
+$font-weight-medium: 600;
 $font-weight-bold: 700;
 $font-weight-heavy: 900;
 
@@ -29,9 +29,8 @@ $font-size-regular: $font-size-base;
 $font-size-large: $font-size-base * 1.25;
 $font-size-x-large: $font-size-base * 1.75;
 
-
 //
-//  Media Break Points
+//  Media Break Point Variables
 // -----------------------------------------------------------------------------
 $breakpoint-small: 576;
 $breakpoint-medium: 768px;
@@ -40,46 +39,7 @@ $breakpoint-xlarge: 1200px;
 
 $media-query-breakpoint: 992px;
 
-
-
 $top-nav-height: 64px;
 $transition-short: 50ms ease-in-out;
 $transition: 250ms ease-out;
 $transition-long: 500ms ease-out;
-
-
-
-// //  Colors
-// $black: #293039;
-// $white: #E7EBF0;
-// $blue: #478DEB;
-// $yellow: #FDB165;
-// $green: #A7E8DB;
-// $pink: #FF8E99;
-// $purple: #63628C;
-
-// //  Background colors
-// $bg-color-primary: $black;
-// $bg-color-secondary: $white;
-
-// $fg-color: rgba(255, 255, 255, 0.9);
-// $text-color-black: $black;
-// $text-color-white: $white;
-// $text-color-default: $black;
-// $text-color-highlight: $blue;
-// $text-color-muted: $purple;
-// $text-color-warning: $yellow;
-// $text-color-danger: $pink;
-
-
-// $primary: $blue;
-// $secondary: $purple;
-
-// $gradient: linear-gradient(300deg, #ba4aff, rgba(186, 74, 255, 0) 70%),
-//   linear-gradient(227deg, #008aff, rgba(0, 138, 255, 0) 70%),
-//   linear-gradient(104deeg, #00ffc6, rgba(0, 255, 198, 0) 74%);
-
-// $top-nav-height: 60px;
-
-// $transition: 250ms ease-out;
-// $transition-long: 500ms ease-out;
