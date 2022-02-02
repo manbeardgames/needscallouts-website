@@ -1,7 +1,7 @@
-@use '../abstracts/variables' as *;
+@use './variables' as *;
 
 //
-//  CORE
+//  Root
 // -----------------------------------------------------------------------------
 html {
     font-family: $font-spartan;

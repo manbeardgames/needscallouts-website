@@ -1,26 +1,31 @@
-@use '../abstracts/variables' as *;
+@use './variables' as *;
 
-.top-nav {
+//
+//  Top Navigation Bar
+// -----------------------------------------------------------------------------
+.fixed-top-navigation {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
+    inset: 0 0 auto 0;
+    
+    //  Ensure it doesn't get hidden behind anything
+    z-index: 999; 
 
     background-color: $black;
     color: $white;
     box-shadow: -2px 2px 8px 0px $black;
+
+    //  Top navigation bar has a fixed height always, which other elements
+    //  should take into account for initial body positioning
     height: $top-nav-height;
 
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: $top-nav-height;
-        padding-left: 15px;
-        padding-right: 15px;
+        height: 100%;
+        padding: 0 15px;
 
-        .nav-brand {
+        .branding {
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
@@ -34,9 +39,10 @@
                 margin-right: 1rem;
             }
 
-            .brand-title {
-                font-size: 2rem;
+            h1 {
                 align-self: center;
+                font-weight: $font-weight-heavy;
+                margin: 0;
             }
         }
 
@@ -44,10 +50,10 @@
             padding: 5px 7px 3px 7px;
             border-radius: 4px;
             cursor: pointer;
-            transition: $transition;
+            transition: $transition-short;
 
             svg {
-                height: 1rem;
+                height: $font-size-base;
                 color: $white;
             }
 
@@ -67,8 +73,8 @@
 
         ul {
             list-style: none;
-
-            li {
+            
+            li{
                 display: inline-block;
 
                 a {
@@ -76,8 +82,8 @@
                     color: $white;
                     padding: 8px 30px;
                     border-radius: 7px;
-                    transition: $transition;
-
+                    transition: $transition-short;
+                    
                     &:hover,
                     &:active {
                         color: $blue;
@@ -89,14 +95,12 @@
     }
 }
 
-@media screen and (max-width: $media-query-breakpoint) {
+@media screen and (max-width: $breakpoint-medium) {
     .top-nav {
         nav {
             ul {
                 position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
+                inset: 0 0 auto 0;
                 text-align: center;
                 width: 100%;
                 height: calc(100vh - $top-nav-height);
@@ -115,15 +119,17 @@
                 }
             }
 
-            #menu-icon {
+            #menu-icon{
                 display: block;
             }
 
             #menu-button:checked {
-                & ~ ul {
+                &~ul {
                     display: block;
                 }
             }
         }
     }
 }
+
+

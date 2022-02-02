@@ -1,0 +1,134 @@
+@use '../variables' as *;
+
+//  The total number of images in the carousel. Will need to be updated
+//  if more images are added later
+$totalImages: 11;
+
+//  The total number of seconds between each image to delay before switching
+//  from one image to the next
+$animationDelay: 5s;
+
+//  The total runtime of all animations combined
+$totalAnimationTime: $totalImages * $animationDelay;
+
+.carousel {
+    //  Position relative set here so that position:absolute works correctly
+    //  later for the overlay
+    position: relative;
+
+    //  The width and height are set to give a 16:9 (0.5625) aspect ratio
+    width: 100vw;
+    height: 56.25vw;
+
+    //  Depending on the screen size, however, do not allow the height to
+    //  go beyond the height of the view.
+    max-height: calc(100vh - $top-nav-height);
+
+    //  Hide any overflow, we want this to all be contained
+    overflow: hidden;
+
+    background-color: $black;
+    border-bottom: 1px solid $black;
+    box-shadow: -2px 2px 8px 0px $black;
+
+
+    .carousel-overlay {
+        //  Ensure the overlay is above the images on the z-index but below
+        //  the title container
+        z-index: 1;
+
+        //  Use absolute positioning to stretch the overlay across the container
+        position: absolute;
+        inset: 0 0 0 0;
+
+
+        background-image: url('/images/pattern.png');
+        background-repeat: repeat;        
+    }
+
+    .carousel-image {
+        //  Ensure images are the bottom z-index below the overlay
+        z-index: 0;
+
+        //  Just like with the container, we'll set the width and height for
+        //  each image to ensure a 16:9 (0.5625) aspect ratio
+        width: 100vw;
+        height: 56.25vw;
+        max-height: calc(100vh - $top-nav-height);
+
+        //  Position in the absolute top-left of the container.
+        position: absolute;
+        inset: 0 0 auto 0;
+        
+        //  Initial opacity is set to 0. This is to allow the animation to fade
+        //  the image in when it is time
+        opacity: 0;
+
+        animation: carouselImageAnimation $totalAnimationTime linear infinite;
+
+        //  Calculate the animation delay for each image in the carousel.
+        @for $i from 0 through $totalImages {
+            &:nth-of-type(#{$i + 1}) {
+                animation-delay: calc($animationDelay * $i);
+            }
+        }
+    }
+
+    .carousel-title-container {
+        //  Ensure the title containe top z-index above the overlay
+        z-index: 2;
+
+        //  Use absolute positioning to stretch the title across the entire
+        //  container.
+        position: absolute;
+        inset: 0 0 0 0;
+        
+        text-align: center;
+        color: $white;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1, h3 {
+            text-shadow: -0.05em 0.02em $black, -0.08em 0.04em $pink;
+        }
+
+        a {
+            padding: 0.5rem 1rem;
+            background-color: $blue;
+            color: $white;
+            
+            border: 1px solid $white;
+            border-radius: 0.3rem;
+            text-decoration: none;
+
+            font-size: $font-size-large;
+            font-weight: $font-weight-heavy;
+
+            &:hover, &:active {
+                background-color: $black;
+                color: $white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+    .carousel {
+        .carousel-title-container {
+            a {
+                font-size: $font-size-regular;
+            }
+        }
+    }
+}
+
+@keyframes carouselImageAnimation {
+    0% { filter: blur(12px); }
+    10% { opacity: 1; filter: blur(0); }
+    20% { opacity: 1; }
+    30% { opacity: 0; }
+    40% { transform: scale(1.2); }
+}

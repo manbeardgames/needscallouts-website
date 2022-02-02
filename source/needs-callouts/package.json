@@ -5,6 +5,8 @@
   "main": "./app/app.js",
   "scripts": {
     "init": "npm install && gulp build",
+    "dev": "nodemon .",
+    "scss": "sass --watch --style=expanded scss:app/public/css",
     "watch-app": "nodemon ./app/app.js --ext *",
     "watch-scss": "gulp dev"
   },
@@ -19,14 +21,14 @@
     "http-errors": "^2.0.0",
     "marked": "^4.0.12",
     "moment": "^2.29.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "sass": "^1.49.7"
   },
   "devDependencies": {
     "connect-livereload": "^0.6.1",
     "gulp": "^4.0.2",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
-    "livereload": "^0.9.3",
-    "sass": "^1.49.0"
+    "livereload": "^0.9.3"
   }
 }

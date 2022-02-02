@@ -1,0 +1,8 @@
+{
+    "verbos": true,
+    "env": {
+        "NODE_ENV": "development"
+    },
+    "ext": "*",
+    "ignore": ["*.scss", "./node_modules/**/*"]
+}

@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-  line-height: 1;
+  line-height: 100;
 }
 
 ol, ul {
@@ -533,3 +533,5 @@ h6 {
 #latest-news .news-preview-container .news-preview-link:hover, #latest-news .news-preview-container .news-preview-link:active {
   color: #478deb;
 }
+
+/*# sourceMappingURL=site.css.map */
