@@ -49,17 +49,13 @@ https://twitter.com/manbeardgames
 
 <body>
     <%- include('../partials/_topnav'); %>
-    <%- include('./_carousel'); %>
-    <main class="display-flex flex-row justify-content-center">
-        <div class="container">
+    <%- include('./_illustration'); %>
+    <main class="container flex-column justify-content-center">
             <img src="/images/bottom-border-image.webp" style="width: 100%;" />
             <div class="display-flex flex-row flex-wrap">
-                <div class="flex-70">Test 80</div>
-                <div class="flex-30">
-                    <%- include('./_latest-news'); %>
-                </div>
+                <%- include('./_message-us.ejs'); %>
             </div>
-        </div>
+        
     </main>
        <!--     <div class="width-100 display-flex flex-row justify-center">
 

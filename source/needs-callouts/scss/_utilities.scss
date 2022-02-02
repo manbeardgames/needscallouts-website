@@ -1,0 +1,33 @@
+@use './variables' as *;
+
+.container {
+    width: 100%;
+    margin-inline: auto;
+    border: 1px solid red;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        width: min(1140px, 100%);
+    }    
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.justify-content-center {
+    justify-content: center;
+}

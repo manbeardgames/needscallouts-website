@@ -64,6 +64,8 @@ $totalAnimationTime: $totalImages * $animationDelay;
         //  the image in when it is time
         opacity: 0;
 
+        will-change: opacity;
+
         animation: carouselImageAnimation $totalAnimationTime linear infinite;
 
         //  Calculate the animation delay for each image in the carousel.
@@ -115,7 +117,7 @@ $totalAnimationTime: $totalImages * $animationDelay;
     }
 }
 
-@media screen and (max-width: $breakpoint-medium) {
+@media screen and (max-width: $breakpoint-tablet) {
     .carousel {
         .carousel-title-container {
             a {

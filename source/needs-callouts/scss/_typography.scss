@@ -29,7 +29,7 @@ h6 {
     font-size: 1rem;
 }
 
-@media screen and (max-width: $breakpoint-medium) {
+@media screen and (max-width: $breakpoint-tablet) {
     h1 {
         font-size: calc(1em + 1.5vw);
     }
@@ -39,4 +39,9 @@ h6 {
     h3 {
         font-size: calc(0.5em + 0.75vw);
     }
+}
+
+
+b {
+    font-weight: $font-weight-bold;
 }

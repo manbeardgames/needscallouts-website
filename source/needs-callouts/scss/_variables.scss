@@ -32,12 +32,11 @@ $font-size-x-large: $font-size-base * 1.75;
 //
 //  Media Break Point Variables
 // -----------------------------------------------------------------------------
-$breakpoint-small: 576;
-$breakpoint-medium: 768px;
-$breakpoint-large: 992x;
-$breakpoint-xlarge: 1200px;
+$breakpoint-desktop: 1920px;
+$breakpoint-laptop: 1280px;
+$breakpoint-tablet: 810px;
+$breakpoint-mobile: 576px;
 
-$media-query-breakpoint: 992px;
 
 $top-nav-height: 64px;
 $transition-short: 50ms ease-in-out;
