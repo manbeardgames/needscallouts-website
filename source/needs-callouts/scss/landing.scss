@@ -2,6 +2,7 @@
 @use './core';
 @use './components/carousel';
 
+
 //
 //  Illustration
 // -----------------------------------------------------------------------------
@@ -35,7 +36,7 @@
         position: absolute;
         inset: 0 0 0 0;
 
-        background-image: url('/images/pattern.png');
+        background-image: url('/images/common/pattern.png');
         background-repeat: repeat;
     }
 
@@ -52,6 +53,10 @@
         //  Position in the top-left of the container
         position: absolute;
         inset: 0 0 auto 0;
+
+        background-image: url('/images/landing/heading.webp');
+        background-size: cover;
+        background-position: center top;
     }
 
     .illustration-title-container {
@@ -79,24 +84,24 @@
             text-shadow: -0.05em 0.02em $black, -0.08em 0.04em $pink;
         }
 
-        a {
-            padding: 0.5rem 1rem;
-            background-color: $blue;
-            color: $white;
+        // a {
+        //     padding: 0.5rem 1rem;
+        //     background-color: $blue;
+        //     color: $white;
 
-            border: 1px solid $white;
-            border-radius: 0.3rem;
-            text-decoration: none;
+        //     border: 1px solid $white;
+        //     border-radius: 0.3rem;
+        //     text-decoration: none;
 
-            font-size: $font-size-large;
-            font-weight: $font-weight-heavy;
+        //     font-size: $font-size-large;
+        //     font-weight: $font-weight-heavy;
 
-            &:hover,
-            &:active {
-                background-color: $black;
-                color: $white;
-            }
-        }
+        //     &:hover,
+        //     &:active {
+        //         background-color: $black;
+        //         color: $white;
+        //     }
+        // }
     }
 }
 
@@ -129,7 +134,7 @@
             font-weight: $font-weight-heavy;
             padding: 1rem 1.5rem;
 
-            
+
         }
     }
 
@@ -162,28 +167,128 @@
             }
         }
 
-        button {
-            min-height: 64px;
-            background-color: $black;
-            color: $white;
-            border: none;
-            padding: 1rem 1.5rem;
+        // button {
+        //     min-height: 64px;
+        //     background-color: $black;
+        //     color: $white;
+        //     border: none;
+        //     padding: 1rem 1.5rem;
 
-            background-image: url('/images/site/buttons/button-dark-right.webp');
-            background-repeat: no-repeat;
-            background-position: right center;
-            background-size: 64px 64px;
+        //     background-image: url('/images/site/buttons/button-dark-right.webp');
+        //     background-repeat: no-repeat;
+        //     background-position: right center;
+        //     background-size: 64px 64px;
 
-            &:hover {
-                background-color: $blue;
-                background-image: url('/images/site/buttons/button-dark-right-hover.webp');
-            }
-        }
+        //     &:hover {
+        //         background-color: $blue;
+        //         background-image: url('/images/site/buttons/button-dark-right-hover.webp');
+        //     }
+        // }
     }
 }
 
 @media screen and (max-width: $breakpoint-laptop) {
     #message-us-container {
         flex-direction: column;
+    }
+}
+
+
+//
+//  Gallery
+// -----------------------------------------------------------------------------
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0 0;
+    grid-template-areas:
+    "img-1 img-1 img-2 img-3"
+    "img-1 img-1 img-4 img-5"
+    "img-7 img-8 img-6 img-6"
+    "img-9 img-10 img-6 img-6"
+    "img-11 img-12 img-13 img-14";
+
+    @for $i from 1 through 14 {
+        img:nth-of-type(#{$i}) {
+            grid-area: img-#{$i};
+            object-fit: cover;
+            width: 100%;
+            max-height: 100%;
+        }
+    }
+}
+
+
+//
+//  Meet the Officers
+// -----------------------------------------------------------------------------
+
+#meet-the-officers {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('/images/arrow.svg');
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: 0px;
+    row-gap: 1rem;;
+
+    #meet-the-officers-content {
+        display: flex;
+        flex-direction: row;
+
+
+        div {
+            box-sizing: border-box;
+            text-align: justify;
+            padding: 40px;
+            width: 50%;
+            align-self: center;
+        }
+
+        div:first-child {
+            background-color: $purple;
+            color: $white;
+        }
+    }
+}
+
+.split-heading-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.split-heading-top,
+.split-heading-bottom {
+    background-color: $purple;
+    text-align: right;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    color: $white;
+    margin: 0;
+    align-self: flex-end;
+}
+
+@media screen and (max-width: $breakpoint-tablet) {
+    #meet-the-officers{
+    #meet-the-officers-content {
+        flex-direction: column;
+
+        div {
+            width: 100%;
+        }
+    }
+}
+    .split-heading-container {
+        flex-direction: row;
+
+        .split-heading-top {
+            padding-right: 0;
+        }
+
+        .split-heading-bottom {
+            padding-left: 0.5rem;
+        }
     }
 }

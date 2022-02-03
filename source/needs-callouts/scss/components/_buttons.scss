@@ -1,56 +1,112 @@
-@use '../abstracts/variables' as *;
+@use '../variables' as *;
 
-.button {
+a.button, button.button {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    min-width: 300px;
+
     height: 64px;
-    width: fit-content;
-    padding-left: 0.5rem;
-    font-size: 1.25rem;
+    background-color: transparent;
+
+    border: none;
+    // padding: 1rem 1.5rem;
+    text-align: center;
+    font-size: $font-size-regular;
+
     text-decoration: none;
-    font-weight: $font-weight-bold;
-    position: relative;
-}
 
 
-.button-dark {
-    background-color: $black;
-    color: $white;
 
-
-    &::after {
-        content: '';
-        background-color: $white;
-        background-image: url('/images/site/buttons/button-dark-right.webp');
-        background-size: 48px 64px;
-        display: inline-block;
-        width: 48px;
-        height: 64px;
-        
-    }
-
-    &:hover {
-        background-color: $blue;
+    &.button-dark {
         color: $white;
+        background-image: url('/images/common/buttons/dark/button-dark-end.webp'),
+                          url('/images/common/buttons/dark/button-dark-fill.webp');
 
-        &::after {
-            background-image: url('/images/site/buttons/button-dark-right-hover.webp');
+        background-repeat: no-repeat, no-repeat;
+        background-position: right center, left top;
+        background-size: 48px 64px, calc(100% - 48px);
+
+        &:hover {
+            background-image: url('/images/common/buttons/dark/button-dark-end-hover.webp'),
+                              url('/images/common/buttons/dark/button-dark-fill-hover.webp');
         }
     }
-}
-
-.button-white {
-    background-color: $white;
-    color: $black;
-    border: 1px solid $black;
-}
 
 
-@media screen and (max-width: $media-query-breakpoint) {
-    .button {
-        // padding: 0.25rem .5rem;
-        font-size: 1rem;
+    &.button-light {
+        color: $black;
+        background-image: url('/images/common/buttons/light/button-light-end.webp'),
+                          url('/images/common/buttons/light/button-light-fill.webp');
+
+        background-repeat: no-repeat, no-repeat;
+        background-position: right center, left top;
+        background-size: 48px 64px, calc(100% - 48px);
+
+        &:hover {
+            background-image: url('/images/common/buttons/light/button-light-end-hover.webp'),
+                              url('/images/common/buttons/light/button-light-fill-hover.webp');
+        }
     }
+
+
 }
+
+
+
+// .button {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: center;
+//     height: 64px;
+//     width: fit-content;
+//     padding-left: 0.5rem;
+//     font-size: 1.25rem;
+//     text-decoration: none;
+//     font-weight: $font-weight-bold;
+//     position: relative;
+// }
+
+
+// .button-dark {
+//     background-color: $black;
+//     color: $white;
+
+
+//     &::after {
+//         content: '';
+//         background-color: $white;
+//         background-image: url('/images/site/buttons/button-dark-right.webp');
+//         background-size: 48px 64px;
+//         display: inline-block;
+//         width: 48px;
+//         height: 64px;
+
+//     }
+
+//     &:hover {
+//         background-color: $blue;
+//         color: $white;
+
+//         &::after {
+//             background-image: url('/images/site/buttons/button-dark-right-hover.webp');
+//         }
+//     }
+// }
+
+// .button-white {
+//     background-color: $white;
+//     color: $black;
+//     border: 1px solid $black;
+// }
+
+
+// @media screen and (max-width: $media-query-breakpoint) {
+//     .button {
+//         // padding: 0.25rem .5rem;
+//         font-size: 1rem;
+//     }
+// }

@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Sass variables aren't allowed in plain CSS.\a     \2577 \a 349 \2502      height: calc(100vh - $top-nav-height);\a     \2502                           ^^^^^^^^^^^^^^^\a     \2575 \a   scss\\site.css 349:26  root stylesheet";
+  content: "Error: Sass variables aren't allowed in plain CSS.\a     \2577 \a 349 \2502      height: calc(100vh - $top-nav-height);\d\a     \2502                           ^^^^^^^^^^^^^^^\a     \2575 \a   scss\\site.css 349:26  root stylesheet";
 }

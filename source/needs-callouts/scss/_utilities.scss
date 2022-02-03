@@ -3,11 +3,10 @@
 .container {
     width: 100%;
     margin-inline: auto;
-    border: 1px solid red;
 
     @media screen and (min-width: $breakpoint-desktop) {
-        width: min(1140px, 100%);
-    }    
+        width: min(1280px, 100%);
+    }
 }
 
 .flex-row {
@@ -30,4 +29,35 @@
 
 .justify-content-center {
     justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.gap-y-1 {
+    row-gap: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.border-left-dashed-half-height {
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        height: 50%;
+        width: 2px;
+        color: $black;
+    }
+}
+
+.position-relative {
+    position: relative;
+}
+
+.width-100 {
+    width: 100%;
 }
