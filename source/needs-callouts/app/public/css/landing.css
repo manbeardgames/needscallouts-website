@@ -115,14 +115,30 @@ b {
   font-weight: 700;
 }
 
+.svg-small {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.svg-regular {
+  width: 1rem;
+  height: 1rem;
+}
+
+.svg-large {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.svg-x-large {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
 .container {
   width: 100%;
   margin-inline: auto;
-}
-@media screen and (min-width: 1920px) {
-  .container {
-    width: min(1280px, 100%);
-  }
+  width: min(100%, 1440px);
 }
 
 .flex-row {
@@ -174,6 +190,17 @@ b {
 
 .width-100 {
   width: 100%;
+}
+
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: 24px 24px;
+  background-position: center center;
+}
+.icon.arrow-circle-right {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z' clip-rule='evenodd' /%3E%3C/svg%3E");
 }
 
 a.button, button.button {
@@ -497,7 +524,8 @@ a.button.button-light:hover, button.button.button-light:hover {
   flex-direction: column;
   gap: 1rem;
 }
-#message-us-container #message-us-form input, #message-us-container #message-us-form textarea {
+#message-us-container #message-us-form input,
+#message-us-container #message-us-form textarea {
   font-size: 0.75rem;
   resize: none;
   font-family: inherit;
@@ -505,16 +533,19 @@ a.button.button-light:hover, button.button.button-light:hover {
   border: 1px solid #63628c;
   padding: 1rem 1.5rem;
 }
-#message-us-container #message-us-form input::placeholder, #message-us-container #message-us-form textarea::placeholder {
+#message-us-container #message-us-form input::placeholder,
+#message-us-container #message-us-form textarea::placeholder {
   font-size: 0.75rem;
   color: #63628c;
   font-weight: 700;
   opacity: 1;
 }
-#message-us-container #message-us-form input:focus, #message-us-container #message-us-form textarea:focus {
+#message-us-container #message-us-form input:focus,
+#message-us-container #message-us-form textarea:focus {
   border: 1px solid #293039;
 }
-#message-us-container #message-us-form input:focus::placeholder, #message-us-container #message-us-form textarea:focus::placeholder {
+#message-us-container #message-us-form input:focus::placeholder,
+#message-us-container #message-us-form textarea:focus::placeholder {
   opacity: revert;
 }
 
@@ -625,6 +656,20 @@ a.button.button-light:hover, button.button.button-light:hover {
   background-position-y: 0px;
   row-gap: 1rem;
 }
+#meet-the-officers .split-heading-container {
+  display: flex;
+  flex-direction: column;
+}
+#meet-the-officers .split-heading-container .split-heading-top,
+#meet-the-officers .split-heading-container .split-heading-bottom {
+  background-color: #63628c;
+  text-align: right;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  color: #e7ebf0;
+  margin: 0;
+  align-self: flex-end;
+}
 #meet-the-officers #meet-the-officers-content {
   display: flex;
   flex-direction: row;
@@ -640,39 +685,89 @@ a.button.button-light:hover, button.button.button-light:hover {
   background-color: #63628c;
   color: #e7ebf0;
 }
-
-.split-heading-container {
+#meet-the-officers #ranks-and-leader {
+  display: flex;
+  flex-direction: row;
+}
+#meet-the-officers #ranks-and-leader #ranks {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  width: 30%;
 }
-
-.split-heading-top,
-.split-heading-bottom {
-  background-color: #63628c;
-  text-align: right;
-  width: fit-content;
+#meet-the-officers #ranks-and-leader #ranks h4 {
+  width: 100%;
   padding: 0.5rem 1rem;
+  font-size: 1rem;
   color: #e7ebf0;
-  margin: 0;
-  align-self: flex-end;
+  background-color: #63628c;
+  box-sizing: border-box;
+  margin-bottom: 0;
 }
-
+#meet-the-officers #ranks-and-leader #ranks #ranks-list-container {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #293039;
+  padding-inline: calc(1vw + 0.5rem);
+}
+#meet-the-officers #ranks-and-leader #ranks #ranks-list-container .rank-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+#meet-the-officers #ranks-and-leader #ranks #ranks-list-container .rank-item .rank-heading {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+#meet-the-officers #ranks-and-leader #ranks #ranks-list-container .rank-item .rank-heading .rank-image {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #e7ebf0;
+  border-radius: 3rem;
+  z-index: 1;
+}
+#meet-the-officers #ranks-and-leader #ranks #ranks-list-container .rank-item .rank-heading .rank-name {
+  color: #e7ebf0;
+  background-color: #63628c;
+  align-self: center;
+  width: min(100%, 317px);
+  padding-left: 1rem;
+  font-weight: 700;
+  margin-left: -10px;
+}
+#meet-the-officers #ranks-and-leader #ranks #ranks-list-container .rank-item .rank-description {
+  color: #e7ebf0;
+  font-size: 0.75rem;
+  text-align: left;
+}
 @media screen and (max-width: 810px) {
+  #meet-the-officers .split-heading-container {
+    flex-direction: row;
+  }
+  #meet-the-officers .split-heading-container .split-heading-top {
+    padding-right: 0;
+  }
+  #meet-the-officers .split-heading-container .split-heading-bottom {
+    padding-left: 0.5rem;
+  }
   #meet-the-officers #meet-the-officers-content {
     flex-direction: column;
   }
   #meet-the-officers #meet-the-officers-content div {
     width: 100%;
   }
-
-  .split-heading-container {
-    flex-direction: row;
+  #meet-the-officers #ranks-and-leader {
+    flex-direction: column;
   }
-  .split-heading-container .split-heading-top {
-    padding-right: 0;
-  }
-  .split-heading-container .split-heading-bottom {
-    padding-left: 0.5rem;
+  #meet-the-officers #ranks-and-leader #ranks {
+    width: 100%;
   }
 }
 

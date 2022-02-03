@@ -45,3 +45,23 @@ h6 {
 b {
     font-weight: $font-weight-bold;
 }
+
+.svg-small {
+    width: $font-size-small;
+    height: $font-size-small;
+}
+
+.svg-regular {
+    width: $font-size-regular;
+    height: $font-size-regular;
+}
+
+.svg-large {
+    width: $font-size-large;
+    height: $font-size-large;
+}
+
+.svg-x-large {
+    width: $font-size-x-large;
+    height: $font-size-x-large;
+}

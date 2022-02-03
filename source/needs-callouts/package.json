@@ -6,9 +6,7 @@
   "scripts": {
     "init": "npm install && gulp build",
     "dev": "nodemon .",
-    "scss": "sass --watch --style=expanded scss:app/public/css",
-    "watch-app": "nodemon ./app/app.js --ext *",
-    "watch-scss": "gulp dev"
+    "scss": "sass --watch --style=expanded scss:app/public/css"
   },
   "keywords": [],
   "author": "Christopher Whitley",

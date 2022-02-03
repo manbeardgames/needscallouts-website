@@ -2,7 +2,6 @@
 @use './core';
 @use './components/carousel';
 
-
 //
 //  Illustration
 // -----------------------------------------------------------------------------
@@ -133,8 +132,6 @@
             background-color: $purple;
             font-weight: $font-weight-heavy;
             padding: 1rem 1.5rem;
-
-
         }
     }
 
@@ -144,7 +141,8 @@
         flex-direction: column;
         gap: 1rem;
 
-        input, textarea{
+        input,
+        textarea {
             font-size: $font-size-small;
             resize: none;
             font-family: inherit;
@@ -193,7 +191,6 @@
     }
 }
 
-
 //
 //  Gallery
 // -----------------------------------------------------------------------------
@@ -203,11 +200,11 @@
     grid-template-rows: repeat(5, 1fr);
     gap: 0 0;
     grid-template-areas:
-    "img-1 img-1 img-2 img-3"
-    "img-1 img-1 img-4 img-5"
-    "img-7 img-8 img-6 img-6"
-    "img-9 img-10 img-6 img-6"
-    "img-11 img-12 img-13 img-14";
+        'img-1 img-1 img-2 img-3'
+        'img-1 img-1 img-4 img-5'
+        'img-7 img-8 img-6 img-6'
+        'img-9 img-10 img-6 img-6'
+        'img-11 img-12 img-13 img-14';
 
     @for $i from 1 through 14 {
         img:nth-of-type(#{$i}) {
@@ -218,7 +215,6 @@
         }
     }
 }
-
 
 //
 //  Meet the Officers
@@ -232,12 +228,27 @@
     background-repeat: no-repeat;
     background-position-x: 20px;
     background-position-y: 0px;
-    row-gap: 1rem;;
+    row-gap: 1rem;
+
+    .split-heading-container {
+        display: flex;
+        flex-direction: column;
+
+        .split-heading-top,
+        .split-heading-bottom {
+            background-color: $purple;
+            text-align: right;
+            width: fit-content;
+            padding: 0.5rem 1rem;
+            color: $white;
+            margin: 0;
+            align-self: flex-end;
+        }
+    }
 
     #meet-the-officers-content {
         display: flex;
         flex-direction: row;
-
 
         div {
             box-sizing: border-box;
@@ -252,43 +263,110 @@
             color: $white;
         }
     }
-}
 
-.split-heading-container {
-    display: flex;
-    flex-direction: column;
-}
+    #ranks-and-leader {
+        display: flex;
+        flex-direction: row;
 
-.split-heading-top,
-.split-heading-bottom {
-    background-color: $purple;
-    text-align: right;
-    width: fit-content;
-    padding: 0.5rem 1rem;
-    color: $white;
-    margin: 0;
-    align-self: flex-end;
-}
+        #ranks {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width: 30%;
 
-@media screen and (max-width: $breakpoint-tablet) {
-    #meet-the-officers{
-    #meet-the-officers-content {
-        flex-direction: column;
+            h4 {
+                width: 100%;
+                padding: 0.5rem 1rem;
+                font-size: $font-size-regular;
+                color: $white;
+                background-color: $purple;
+                box-sizing: border-box;
+                margin-bottom: 0;
+            }
 
-        div {
-            width: 100%;
+            #ranks-list-container {
+                box-sizing: border-box;
+                width: 100%;
+                background-color: $black;
+                padding-inline: calc(1vw + .5rem);
+
+                .rank-item {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    padding-top: 50px;
+                    box-sizing: border-box;
+
+                    .rank-heading {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        .rank-image {
+                            flex-shrink: 0;
+                            width: 60px;
+                            height: 60px;
+                            background-size: contain;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            background-color: $white;
+                            border-radius: 3rem;
+                            z-index: 1;
+                        }
+    
+                        .rank-name {
+                            color: $white;
+                            background-color: $purple;
+                            align-self: center;
+                            width: min(100%, 317px);
+                            padding-left: 1rem;
+                            font-weight: $font-weight-bold;
+                            margin-left: -10px;
+                        }
+                    }
+
+                    .rank-description {
+                        color: $white;
+                        font-size: $font-size-small;
+                        text-align: left;
+                    }
+
+                }
+            }
+        }
+
+        #leader {
         }
     }
 }
-    .split-heading-container {
-        flex-direction: row;
 
-        .split-heading-top {
-            padding-right: 0;
+@media screen and (max-width: $breakpoint-tablet) {
+    #meet-the-officers {
+        .split-heading-container {
+            flex-direction: row;
+
+            .split-heading-top {
+                padding-right: 0;
+            }
+
+            .split-heading-bottom {
+                padding-left: 0.5rem;
+            }
         }
 
-        .split-heading-bottom {
-            padding-left: 0.5rem;
+        #meet-the-officers-content {
+            flex-direction: column;
+
+            div {
+                width: 100%;
+            }
+        }
+
+        #ranks-and-leader {
+            flex-direction: column;
+            #ranks {
+                width: 100%;
+
+            }
         }
     }
 }
