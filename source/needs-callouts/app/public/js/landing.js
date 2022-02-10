@@ -16,20 +16,8 @@ const debounce = (fn) => {
 };
 
 //  Reads scroll position and stores it in a data attribute
-const storeScroll = () => {
-    let nav = document.getElementsByClassName('top-nav-container')[0];
-    let illustration = document.getElementsByClassName('illustration')[0];
-    let targetScroll = illustration.offsetTop + illustration.offsetHeight;
-    if (window.scrollY >= targetScroll - 128) {
-        nav.dataset.background = 'dark';
-    } else {
-        nav.dataset.background = 'transparent';
-    }
-    document.documentElement.dataset.scroll = window.scrollY;
-};
-
 const onScroll = () => {
-    let nav = document.getElementsByClassName('top-nav-container')[0];
+    let nav = document.getElementsByClassName('full-screen-navigation')[0];
     let illustration = document.getElementsByClassName('illustration')[0];
     let targetScroll = illustration.offsetTop + illustration.offsetHeight - 128;
     if(window.scrollY >= targetScroll) {
@@ -44,4 +32,4 @@ const onScroll = () => {
 document.addEventListener('scroll', debounce(onScroll), { passive: true });
 
 //  Initial scroll store
-storeScroll();
+onScroll();
