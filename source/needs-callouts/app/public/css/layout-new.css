@@ -1,0 +1,497 @@
+@import 'meyer-reset.css';
+
+/*
+/   Global (pseudo root) Custom Properties
+/-----------------------------------------------------------------------------*/
+
+:root {
+    --color-black: #293039;
+    --color-white: #e7ebf0;
+    --color-blue: #478deb;
+    --color-yellow: #fdb165;
+    --color-green: #a7e8db;
+    --color-pink: #ff8e99;
+    --color-purple: #63628c;
+
+    --font-weight-thin: 100;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 600;
+    --font-weight-bold: 700;
+    --font-weight-heavy: 900;
+
+    --font-size-base: 1rem;
+    --font-size-small: calc(var(--font-size-base) * 0.75);
+    --font-size-regular: var(--font-size-base);
+    --font-size-large: calc(var(--font-size-base) * 1.25);
+    --font-size-x-large: calc(var(--font-size-base) * 1.75);
+
+    --media-query-breakpoint-desktop: 1920px;
+    --media-query-breakpoint-laptop: 1280px;
+    --media-query-breakpoint-tablet: 810px;
+    --media-query-breakpoint-mobile: 576px;
+
+    --top-nav-height: 64px;
+}
+
+/*
+/   Core
+/-----------------------------------------------------------------------------*/
+html {
+    width: 100vw;
+    font-family: 'Spartan', sans-serif;
+    font-size: var(--font-size-regular);
+    font-weight: var(--font-weight-light);
+}
+
+body {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+/*
+/   Typography
+/-----------------------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--font-weight-heavy);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+b {
+    font-weight: var(--font-weight-bold);
+}
+
+/*
+/   Utilities
+/-----------------------------------------------------------------------------*/
+
+.display-none {
+    display: none;
+}
+.container {
+    width: 100%;
+    margin-inline: auto;
+    width: min(100%, 1440px);
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container.row {
+    flex-direction: row;
+}
+
+.flex-container.col {
+    flex-direction: column;
+}
+
+.flex-container.wrap {
+    flex-wrap: wrap;
+}
+
+.flex-container.no-wrap {
+    flex-wrap: nowrap;
+}
+
+.flex-container.justify-content-center {
+    justify-content: center;
+}
+
+.flex-container.justify-content-end {
+    justify-content: end;
+}
+
+.row-gap-1 {
+    row-gap: 1rem;
+}
+
+.col-gap-1 {
+    column-gap: 1rem;
+}
+
+/*
+/   Components
+/-----------------------------------------------------------------------------*/
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-width: 300px;
+    height: 64px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-size: var(--font-size-regular);
+    text-decoration: none;
+}
+
+.button.button-dark {
+    color: var(--color-white);
+    background-image: url('/images/common/buttons/dark/button-dark-end.webp'),
+        url('/images/common/buttons/dark/button-dark-fill.webp');
+
+    background-repeat: no-repeat, no-repeat;
+    background-position: right center, left top;
+    background-size: 48px 64px, calc(100% - 48px);
+}
+
+.button.button-dark:hover {
+    background-image: url('/images/common/buttons/dark/button-dark-end-hover.webp'),
+        url('/images/common/buttons/dark/button-dark-fill-hover.webp');
+}
+
+.button.button-light {
+    color: var(--color-black);
+    background-image: url('/images/common/buttons/light/button-light-end.webp'),
+        url('/images/common/buttons/light/button-light-fill.webp');
+
+    background-repeat: no-repeat, no-repeat;
+    background-position: right center, left top;
+    background-size: 48px 64px, calc(100% - 48px);
+}
+
+.button.button-light:hover {
+    background-image: url('/images/common/buttons/light/button-light-end-hover.webp'),
+        url('/images/common/buttons/light/button-light-fill-hover.webp');
+}
+
+/*
+/   Top Nav
+/-----------------------------------------------------------------------------*/
+.top-nav-container {
+    width: 100%;
+    height: var(--top-nav-height);
+    position: fixed;
+    z-index: 999;
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: row;
+    color: var(--color-white);
+    align-items: center;
+    padding-inline: 1rem;
+}
+
+.top-nav-container .logo {
+    flex: 0 0 auto;
+}
+
+.top-nav-container .nav {
+    width: 100%;
+}
+
+.top-nav-container .nav-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0px;
+}
+
+.top-nav-container .nav-list-item {
+    display: inline-block;
+    padding: 30px;
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+    margin-block: 0.5rem;
+}
+
+.top-nav-container .nav-list-item:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.top-nav-container .nav-list-link {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.top-nav-container .nav-list-item:hover > .nav-list-link {
+    color: var(--color-black);
+}
+
+.top-nav-container .nav-toggle,
+.top-nav-container .nav-toggle-label {
+    display: none;
+}
+
+.top-nav-container .toggler {
+    height: var(--font-size-x-large);
+    border-radius: 7px;
+}
+
+.top-nav-container .toggler:hover {
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+
+/*
+/   Heading Illustration
+/-----------------------------------------------------------------------------*/
+.illustration {
+    /* The width and height are set to give a 16:9 (0.5625) aspect ratio */
+    width: 100vw;
+    height: 56.25vw;
+
+    /* Depending ont he screen size, however, do not allow the heigh to go beyond
+        the height of the view */
+    max-height: calc(100vh - var(--top-nav-height));
+
+    /*  Hide any overflow, we want this to all be contained */
+    overflow: hidden;
+    position: relative;
+    background-color: var(--color-black);
+    border-bottom: 1px solid var(--color-black);
+    box-shadow: -2px 2px 8px var(--color-black);
+}
+
+.illustration-overlay {
+    z-index: 1;
+    position: absolute;
+    inset: 0 0 0 0 ;
+    background-image: url('/images/common/pattern.png');
+    background-repeat: repeat;
+}
+
+.illustration-image {
+    z-index: 0;
+    width: 100vw;
+    height: 56.25vw;
+    max-height: calc(100vh - var(--top-nav-height));
+    position: absolute;
+    inset: 0 0 auto 0 ;
+    background-image: url('/images/landing/heading.webp');
+    background-size: cover;
+    background-position: center top;
+}
+
+.illustration-title-container {
+    z-index: 2;
+    position: absolute;
+    inset: 0 0 0 0;
+    text-align: center;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.illustration-title-container h1,
+.illustration-title-container h3 {
+    text-shadow: -0.05em 0.02em var(--color-black), -0.08em 0.04em var(--color-pink);
+}
+
+
+
+
+
+
+/*
+.top-nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    inset: 0 0 auto 0;
+    z-index: 999;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    box-shadow: -2px 2px 8px 0px var(--color-black);
+    height: var(--top-nav-height);
+}
+
+.top-nav .branding {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 5px;
+    height: 100%;
+}
+
+.top-nav img {
+    align-self: center;
+    height: 100%;
+    object-fit: scale-down;
+    margin-right: 1rem;
+}
+
+.top-nav h1 {
+    align-self: center;
+    font-weight: var(--font-weight-heavy);
+    margin: 0;
+}
+
+.top-nav .toggler-container {
+    padding: 5px 7px 3px 7px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.top-nav .toggler {
+    height: var(--font-size-base);
+    color: var(--color-white);
+}
+
+
+.top-nav .toggler-container:hover {
+    background-color: var(--color-green);
+}
+
+.top-nav .togger:hover {
+    color: var(--color-blue);
+}
+
+.top-nav .toggler-container,
+.top-nav .toggler {
+    display: none;
+}
+
+.top-nav .nav-list {
+    list-style: none;
+}
+
+.top-nav .nav-list-item {
+    display: inline-block;
+}
+
+.top-nav .nav-list-link {
+    text-decoration: none;
+    color: var(--color-white);
+    padding: 8px 30px;
+    border-radius: 7px;
+}
+
+.top-nav .nav-list-link:hover,
+.top-nav .nav-list-link:active {
+    color: var(--color-blue);
+    background-color: var(--color-white);
+}
+*/
+
+/*
+/   Laptop Media Query Breakpoint
+/-----------------------------------------------------------------------------*/
+@media screen and (max-width: 1280px) {
+}
+
+/*
+/   Tablet Media Query Breakpoint
+/-----------------------------------------------------------------------------*/
+@media screen and (max-width: 810px) {
+    /* Typography */
+    h1 {
+        font-size: calc(1em + 1.5vw);
+    }
+
+    h2 {
+        font-size: calc(0.75em + 0.9vw);
+    }
+
+    h3 {
+        font-size: calc(0.5em + 0.75vew);
+    }
+
+    .top-nav-container .nav {
+        display: none;
+        position: absolute;
+        inset:  0 0 auto 0;
+        width: 100%;
+        height: calc(100vh - var(--top-nav-height));
+        margin-top: var(--top-nav-height);
+        background-color: var(--color-black);
+    }
+
+    .top-nav-container .nav-list {
+        flex-direction: column;
+    }
+
+    .top-nav-container .nav-toggle-label {
+        display: block;
+        margin-left: auto;
+    }
+
+    .top-nav-container .nav-toggle:checked~.nav {
+        display: block;
+    }
+
+    .top-nav-container .nav-list-item {
+        margin: 0;
+    }
+
+
+
+
+
+
+    /* Top Nav */
+
+    /* .top-nav .nav-list {
+        position: absolute;
+        inset: 0 0 auto 0;
+        text-align: center;
+        width: 100%;
+        height: calc(100vh - var(--top-nav-height));
+        margin-top: var(--top-nav-height);
+        background-color: var(--color-black);
+        display: none;
+    }
+
+    .top-nav .nav-list-item {
+        display: block;
+        padding: 10px 15px;
+    }
+
+    .top-nav .nav-list-link {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .top-nav .toggler {
+        display: block;
+    }
+
+    .top-nav .toggler:checked~ul {
+        display: block;
+    }
+    */
+}
+
+/*
+/   Tablet Media Query Breakpoint
+/-----------------------------------------------------------------------------*/
+@media screen and (max-width: 576px) {
+}

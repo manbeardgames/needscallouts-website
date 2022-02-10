@@ -1,5 +1,63 @@
 @use './variables' as *;
 
+//
+//  Background Color Shorthands
+// -----------------------------------------------------------------------------
+.bg-black {
+    background-color: $black;
+}
+
+.bg-purple {
+    background-color: $purple;
+}
+
+.bg-yellow {
+    background-color: $yellow;
+}
+
+.bg-blue {
+    background-color: $blue;
+}
+
+.bg-green {
+    background-color: $green;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-pink {
+    background-color: $pink;
+}
+
+//
+//  Text Color Shorthands
+// -----------------------------------------------------------------------------
+.text-black {
+    color: $black;
+}
+
+.text-purple {
+    color: $purple;
+}
+
+.text-yellow {
+    color: $yellow;
+}
+
+.text-blue {
+    color: $blue;
+}
+
+.text-green {
+    color: $green;
+}
+
+.text-white {
+    color: $white;
+}
+
 .container {
     width: 100%;
     margin-inline: auto;
@@ -61,18 +119,4 @@
 
 .width-100 {
     width: 100%;
-}
-
-
-
-.icon {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-size: 24px 24px;
-    background-position: center center;
-
-    &.arrow-circle-right {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z' clip-rule='evenodd' /%3E%3C/svg%3E");
-    }
 }
