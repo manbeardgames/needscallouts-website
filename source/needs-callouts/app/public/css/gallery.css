@@ -1,0 +1,122 @@
+/*
+/   Gallery
+/-----------------------------------------------------------------------------*/
+
+.gallery {
+    display: flex;
+    flex-basis: content;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.gallery .gallery-thumbnail {
+    box-sizing: border-box;
+    max-width: 25%;
+    padding: 2px;
+    overflow: hidden;
+    display: flex;
+}
+
+.gallery:hover img {
+    filter: grayscale(1);
+}
+
+.gallery img {
+    box-sizing: border-box;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+/*
+.gallery {
+    display: flex;
+    padding: 2px;
+    transition: 0.3s;
+}
+
+.gallery:hover .gallery-image {
+    filter: grayscale(2);
+}
+
+.gallery .gallery-column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.gallery .gallery-link {
+    margin: 2px;
+    overflow: hidden;
+}
+
+.gallery .gallery-link:hover .gallery-image {
+    filter: grayscale(0);
+}
+
+.gallery .gallery-link:hover .gallery-caption {
+    opacity: 1;
+}
+
+.gallery .gallery-thumb {
+    position: relative;
+}
+
+.gallery .gallery-image {
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.gallery .gallery-image:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.gallery .gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px 15px 15px;
+    width: 100%;
+    font-size: 16px;
+    color: var(--color-white);
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: 0.3s;
+}
+*/
+
+/*
+/   Laptop Media Query Breakpoint
+/-----------------------------------------------------------------------------*/
+@media screen and (max-width: 1280px) {
+}
+
+/*
+/   Tablet Media Query Breakpoint
+/-----------------------------------------------------------------------------*/
+@media screen and (max-width: 810px) {
+
+    .gallery .gallery-thumbnail {
+        max-width: auto;
+        max-height: 50%;
+    }
+
+}
+
+/*
+/   Tablet Media Query Breakpoint
+/-----------------------------------------------------------------------------*/
+@media screen and (max-width: 576px) {
+    .gallery .gallery-thumbnail {
+        max-width: auto;
+    }
+}

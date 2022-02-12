@@ -40,11 +40,19 @@ https://twitter.com/manbeardgames
     <!-- <link rel="stylesheet" href="/css/landing.css" /> -->
     <link rel="stylesheet" href="/css/landing-new.css" />
     <link rel="stylesheet" href="/css/topnav.css" />
+    <link rel="stylesheet" href="/css/gallery.css" />
 </head>
 
 <body>
-    <%- include('../partials/_topnav'); %>
+    <%#- include('../partials/_topnav'); %>
+    <div class="scroll-container">
     <%- include('./_illustration'); %>
+    <%- include('./_gallery.ejs'); %>
+    <section class="section section-black"></section>
+    <section class="section section-yellow"></section>
+    <section class="section section-blue"></section>
+    <section class="section section-purple"></section>
+    <section class="section section-pink"></section>
     <!-- <main class="container flex-column justify-content-center">
             <img src="/images/common/bottom-border-image.webp" style="width: 100%;" />
             <div class="display-flex flex-row flex-wrap gap-y-1">
@@ -53,6 +61,7 @@ https://twitter.com/manbeardgames
                 <%#- include('./_message-us.ejs'); %>
             </div>
     </main> -->
+</div>
 
     <script src="/js/landing.js"></script>
 </body>

@@ -1,49 +1,10 @@
-<svg version="1.1" viewBox="0 0 290.93 60.164" xmlns="http://www.w3.org/2000/svg">
-	<g transform="translate(-2.5305 -282.04)">
-		<g transform="translate(-4)" font-family="Nunito" font-size="37.333px" font-weight="900" letter-spacing="0px" stroke="#293039" stroke-width="2" word-spacing="0px">
-			<text x="140.02031" y="340.79321" fill="#293039" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="140.02031" y="340.79321">Callouts</tspan></text>
-			<text x="142.02031" y="338.79321" fill="#e7ebf0" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="142.02031" y="338.79321">Callouts</tspan></text>
-		</g>
-		<g transform="translate(-4)" font-family="Nunito" font-size="37.333px" font-weight="900" letter-spacing="0px" stroke="#293039" stroke-width="2" word-spacing="0px">
-			<text x="80.941933" y="311.69592" fill="#293039" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="80.941933" y="311.69592">Needs</tspan></text>
-			<text x="82.941933" y="309.69592" fill="#e7ebf0" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="82.941933" y="309.69592">Needs</tspan></text>
-		</g>
-		<g transform="translate(2,2)">
-			<rect x="3.2059" y="283.72" width="64.804" height="54.702" ry="2.872" fill="#e7ebf0" opacity=".832" stroke="#293039" stroke-width="1.351"/>
-			<g transform="matrix(.40925 0 0 .40208 29.561 246.45)" stroke="#293039">
-				<rect x="-49.371" y="187.27" width="26.264" height="25.759" ry="2.1479" fill="#478deb" opacity=".832"/>
-				<text x="-40.948452" y="205.79308" fill="#e7ebf0" font-family="Nunito" font-size="16px" font-weight="900" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="-40.948452" y="205.79308">3</tspan></text>
-			</g>
-			<g transform="matrix(.40335 0 0 .41126 32.936 244.4)" stroke="#293039">
-				<rect x="-7.4177" y="187.17" width="26.264" height="25.759" ry="2.1479" fill="#478deb" opacity=".832"/>
-				<text x="0.12114347" y="205.69357" fill="#e7ebf0" font-family="Nunito" font-size="16px" font-weight="900" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="0.12114347" y="205.69357">C</tspan></text>
-			</g>
-			<g transform="matrix(.40335 0 0 .41126 29.231 198.9)" stroke="#293039">
-				<rect x="-49.108" y="221.51" width="26.264" height="25.759" ry="2.1479" fill="#63628c" opacity=".832"/>
-				<text x="-40.920433" y="240.02902" fill="#e7ebf0" font-family="Nunito" font-size="16px" font-weight="900" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="-40.920433" y="240.02902">4</tspan></text>
-			</g>
-			<g transform="matrix(.40335 0 0 .41126 12.256 214.76)" stroke="#293039">
-				<rect x="-7.1555" y="221.41" width="26.264" height="25.759" ry="2.1479" fill="#63628c" opacity=".832"/>
-				<text x="-0.46356577" y="239.92953" fill="#e7ebf0" font-family="Nunito" font-size="16px" font-weight="900" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="-0.46356577" y="239.92953">D</tspan></text>
-			</g>
-			<g transform="matrix(.40332 0 0 .41083 70.818 240.86)" stroke="#293039">
-				<rect x="-49.276" y="120.14" width="26.264" height="25.759" ry="2.1479" fill="#ff8e99" opacity=".832"/>
-				<text x="-41.4333" y="138.72736" fill="#e7ebf0" font-family="Nunito" font-size="16px" font-weight="900" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="-41.4333" y="138.72736">1</tspan></text>
-			</g>
-			<g transform="matrix(.40352 0 0 .40201 32.755 241.8)" stroke="#293039">
-				<rect x="-7.3227" y="120.04" width="26.264" height="25.759" ry="2.1479" fill="#ff8e99" opacity=".832"/>
-				<text x="-0.30290189" y="138.55588" fill="#e7ebf0" font-family="Nunito" font-size="16px" font-weight="900" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="-0.30290189" y="138.55588">A</tspan></text>
-			</g>
-			<g transform="matrix(.40023 0 0 .40207 70.633 259.58)" stroke="#293039">
-				<rect x="-49.013" y="154.37" width="26.264" height="25.759" ry="2.1479" fill="#fdb165" opacity=".832"/>
-				<text x="-40.771904" y="172.97932" fill="#e7ebf0" font-family="Nunito" font-size="16px" font-weight="900" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="-40.771904" y="172.97932">2</tspan></text>
-			</g>
-			<g transform="matrix(.40352 0 0 .40201 53.79 244.85)">
-				<g transform="translate(-.22126 -1.7768)" stroke="#293039">
-					<rect x="-7.0606" y="154.27" width="26.264" height="25.759" ry="2.1479" fill="#fdb165" opacity=".832"/>
-					<text x="0.26342973" y="172.79182" fill="#e7ebf0" font-family="Nunito" font-size="16px" font-weight="900" letter-spacing="0px" word-spacing="0px" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="0.26342973" y="172.79182">B</tspan></text>
-				</g>
-			</g>
-		</g>
+<svg version="1.1" viewBox="0 0 211.22 64.164" xmlns="http://www.w3.org/2000/svg">
+	<g transform="translate(-82.331 -278.04)" font-family="Nunito" font-size="37.333px" font-weight="900" letter-spacing="0px" stroke="#293039" stroke-width="2" word-spacing="0px">
+		<text x="140.02031" y="340.79321" fill="#293039" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="140.02031" y="340.79321">Callouts</tspan></text>
+		<text x="142.02031" y="338.79321" fill="#e7ebf0" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="142.02031" y="338.79321">Callouts</tspan></text>
+	</g>
+	<g transform="translate(-82.331 -282.04)" font-family="Nunito" font-size="37.333px" font-weight="900" letter-spacing="0px" stroke="#293039" stroke-width="2" word-spacing="0px">
+		<text x="80.941933" y="311.69592" fill="#293039" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="80.941933" y="311.69592">Needs</tspan></text>
+		<text x="82.941933" y="309.69592" fill="#e7ebf0" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="82.941933" y="309.69592">Needs</tspan></text>
 	</g>
 </svg>

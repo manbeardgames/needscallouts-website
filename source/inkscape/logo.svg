@@ -1,758 +1,100 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="256"
-   height="256"
-   viewBox="0 0 256 256"
    version="1.1"
-   id="svg4716"
+   viewBox="0 0 211.21549 64.16371"
+   id="svg21384"
    sodipodi:docname="logo.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   inkscape:export-filename="C:\Users\whitleych17\Desktop\logo_3.png"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96">
+   width="211.21548"
+   height="64.163712"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs4710">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient5269">
-      <stop
-         style="stop-color:#000000;stop-opacity:1;"
-         offset="0"
-         id="stop5265" />
-      <stop
-         style="stop-color:#000000;stop-opacity:0;"
-         offset="1"
-         id="stop5267" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient5269"
-       id="linearGradient5271"
-       x1="17.559619"
-       y1="358.51807"
-       x2="232.25829"
-       y2="358.51807"
-       gradientUnits="userSpaceOnUse" />
-  </defs>
+     id="defs21388" />
   <sodipodi:namedview
-     id="base"
+     id="namedview21386"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="173.96146"
-     inkscape:cy="1.8168408"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
      showgrid="false"
-     units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.8183069"
+     inkscape:cx="135.56568"
+     inkscape:cy="15.12396"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
-     inkscape:window-x="1672"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     showguides="true"
-     inkscape:guide-bbox="true"
-     inkscape:snap-global="false">
-    <sodipodi:guide
-       position="0,256"
-       orientation="128.00002,0"
-       id="guide6104"
-       inkscape:locked="false" />
-    <sodipodi:guide
-       position="111.62186,128.28937"
-       orientation="0,128"
-       id="guide6106"
-       inkscape:locked="false" />
-    <sodipodi:guide
-       position="128,127.99999"
-       orientation="-128.00002,0"
-       id="guide6108"
-       inkscape:locked="false" />
-    <sodipodi:guide
-       position="645,205.71429"
-       orientation="0,1"
-       id="guide6110"
-       inkscape:locked="false"
-       inkscape:label=""
-       inkscape:color="rgb(0,0,255)" />
-    <sodipodi:guide
-       position="206,276.07143"
-       orientation="1,0"
-       id="guide6117"
-       inkscape:locked="false"
-       inkscape:label=""
-       inkscape:color="rgb(0,0,255)" />
-    <sodipodi:guide
-       position="237.89092,50"
-       orientation="0,1"
-       id="guide6119"
-       inkscape:locked="false"
-       inkscape:label=""
-       inkscape:color="rgb(0,0,255)" />
-    <sodipodi:guide
-       position="50,286.37825"
-       orientation="1,0"
-       id="guide6121"
-       inkscape:locked="false"
-       inkscape:label=""
-       inkscape:color="rgb(0,0,255)" />
-    <sodipodi:guide
-       position="178.03939,232.33509"
-       orientation="0,1"
-       id="guide6123"
-       inkscape:locked="false" />
-    <sodipodi:guide
-       position="76.183036,233.28125"
-       orientation="1,0"
-       id="guide6125"
-       inkscape:locked="false" />
-    <sodipodi:guide
-       position="178.67073,232.33509"
-       orientation="1,0"
-       id="guide6127"
-       inkscape:locked="false" />
-    <sodipodi:guide
-       position="233.14732,76.640625"
-       orientation="0,1"
-       id="guide6129"
-       inkscape:locked="false" />
-  </sodipodi:namedview>
-  <metadata
-     id="metadata4713">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
+     inkscape:current-layer="svg21384" />
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-229.26665)">
-    <g
-       id="g6474"
-       transform="translate(1084.2857,105.71429)">
-      <text
-         id="text5263"
-         y="461.87234"
-         x="-366.19467"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#63628c;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:341.33334351px;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#63628c;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           y="461.87234"
-           x="-366.19467"
-           id="tspan5261"
-           sodipodi:role="line">N</tspan></text>
-      <text
-         id="text5276"
-         y="425.52036"
-         x="-322.39023"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fdb165;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:341.33334351px;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#fdb165;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           y="425.52036"
-           x="-322.39023"
-           id="tspan5274"
-           sodipodi:role="line">c</tspan></text>
-    </g>
-    <g
-       id="g6468"
-       transform="translate(687.14286,-262.85713)">
-      <text
-         id="text5895"
-         y="477.58664"
-         x="-1.1946706"
-         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:341.33334351px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:341.33334351px;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-           y="477.58664"
-           x="-1.1946706"
-           id="tspan5893"
-           sodipodi:role="line">N</tspan></text>
-      <g
-         transform="translate(-285.65284,247.16846)"
-         id="g5964">
-        <rect
-           style="fill:#ff8e99;fill-opacity:1;stroke:#293039;stroke-width:2.75691056;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect5959"
-           width="47.243088"
-           height="47.243088"
-           x="310.59277"
-           y="165.45757"
-           ry="2.0294783" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="319.29926"
-           y="204.11911"
-           id="text5879"><tspan
-             sodipodi:role="line"
-             id="tspan5877"
-             x="319.29926"
-             y="204.11911"
-             style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">C</tspan></text>
-      </g>
-      <g
-         transform="matrix(0.94339551,0,0,0.9416742,-537.24371,213.66423)"
-         id="g6115">
-        <rect
-           style="fill:#fdb165;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect5966"
-           width="50"
-           height="50"
-           x="597.14282"
-           y="130.26666"
-           ry="2.1479101" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="605.84369"
-           y="170.30666"
-           id="text5883"><tspan
-             sodipodi:role="line"
-             id="tspan5881"
-             x="605.84369"
-             y="170.30666"
-             style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">A</tspan></text>
-      </g>
-      <g
-         transform="matrix(0.94339551,0,0,0.9416742,-343.94361,97.36188)"
-         id="g5996">
-        <rect
-           style="fill:#478deb;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect5966-3"
-           width="50"
-           height="50"
-           x="392.24457"
-           y="165.26666"
-           ry="2.1479101" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="403.69791"
-           y="205.328"
-           id="text5887"><tspan
-             sodipodi:role="line"
-             id="tspan5885"
-             x="403.69791"
-             y="205.328">L</tspan></text>
-      </g>
-      <g
-         transform="matrix(0.5916131,0.73483946,-0.73349868,0.59053364,158.62615,-133.4926)"
-         id="g6040">
-        <rect
-           ry="2.1479101"
-           y="327.40952"
-           x="405"
-           height="50"
-           width="50"
-           id="rect5966-3-9-2"
-           style="fill:#ff8e99;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="412.76266"
-           y="367.44952"
-           id="text5891"><tspan
-             sodipodi:role="line"
-             id="tspan5889"
-             x="412.76266"
-             y="367.44952">O</tspan></text>
-      </g>
-      <g
-         transform="matrix(0.94339551,0,0,0.9416742,-182.84026,187.35907)"
-         id="g6060">
-        <rect
-           style="fill:#fdb165;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect5966-2"
-           width="50"
-           height="50"
-           x="387.85715"
-           y="242.40952"
-           ry="2.1479101" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="396.89981"
-           y="282.40686"
-           id="text5891-4"><tspan
-             sodipodi:role="line"
-             id="tspan5889-7"
-             x="396.89981"
-             y="282.40686">U</tspan></text>
-      </g>
-      <g
-         transform="matrix(0.94339551,0,0,0.9416742,-178.94757,76.243504)"
-         id="g6080">
-        <rect
-           ry="2.1479101"
-           y="275.98093"
-           x="384.28571"
-           height="50"
-           width="50"
-           id="rect5966-3-0"
-           style="fill:#478deb;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="395.54703"
-           y="315.82892"
-           id="text5891-5"><tspan
-             sodipodi:role="line"
-             id="tspan5889-6"
-             x="395.54703"
-             y="315.82892">T</tspan></text>
-      </g>
-      <g
-         transform="matrix(0.94511918,0,0,0.94167575,-188.03468,-39.564011)"
-         id="g6100">
-        <rect
-           ry="2.1479101"
-           y="309.55237"
-           x="392.14285"
-           height="50"
-           width="50"
-           id="rect5966-3-9-7"
-           style="fill:#63628c;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="402.88455"
-           y="349.59238"
-           id="text5891-3"><tspan
-             sodipodi:role="line"
-             id="tspan5889-0"
-             x="402.88455"
-             y="349.59238">S</tspan></text>
-      </g>
-      <g
-         transform="matrix(0.58710946,0.73844267,-0.73709531,0.58603822,2.562149,-88.663181)"
-         id="g5996-2">
-        <rect
-           style="fill:#63628c;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect5966-3-9"
-           width="50"
-           height="50"
-           x="392.24457"
-           y="165.26666"
-           ry="2.1479101" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="403.69791"
-           y="205.328"
-           id="text5887-9"><tspan
-             sodipodi:role="line"
-             id="tspan5885-3"
-             x="403.69791"
-             y="205.328">L</tspan></text>
-      </g>
-    </g>
-    <g
-       id="g6279">
-      <g
-         transform="translate(89.659576,-197.79041)"
-         id="g5964-0">
-        <rect
-           style="fill:#ff8e99;fill-opacity:1;stroke:#293039;stroke-width:2.75691056;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect5959-6"
-           width="47.243088"
-           height="47.243088"
-           x="310.59277"
-           y="165.45757"
-           ry="2.0294783" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="319.29926"
-           y="204.11911"
-           id="text5879-8"><tspan
-             sodipodi:role="line"
-             id="tspan5877-1"
-             x="319.29926"
-             y="204.11911"
-             style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">C</tspan></text>
-      </g>
-      <g
-         transform="translate(-121.13503,-138.7726)"
-         id="g6115-7">
-        <rect
-           style="fill:#fdb165;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect5966-33"
-           width="50"
-           height="50"
-           x="597.14282"
-           y="130.26666"
-           ry="2.1479101" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="605.84369"
-           y="170.30666"
-           id="text5883-1"><tspan
-             sodipodi:role="line"
-             id="tspan5881-2"
-             x="605.84369"
-             y="170.30666"
-             style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">A</tspan></text>
-      </g>
-      <g
-         transform="translate(108.12933,-95.977952)"
-         id="g5996-7">
-        <rect
-           style="fill:#478deb;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect5966-3-1"
-           width="50"
-           height="50"
-           x="392.24457"
-           y="165.26666"
-           ry="2.1479101" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="403.69791"
-           y="205.328"
-           id="text5887-3"><tspan
-             sodipodi:role="line"
-             id="tspan5885-0"
-             x="403.69791"
-             y="205.328">L</tspan></text>
-      </g>
-      <g
-         transform="translate(-6.1261023,-156.62082)"
-         id="g6040-8">
-        <rect
-           ry="2.1479101"
-           y="327.40952"
-           x="405"
-           height="50"
-           width="50"
-           id="rect5966-3-9-2-0"
-           style="fill:#ff8e99;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="412.76266"
-           y="367.44952"
-           id="text5891-2"><tspan
-             sodipodi:role="line"
-             id="tspan5889-5"
-             x="412.76266"
-             y="367.44952">O</tspan></text>
-      </g>
-      <text
-         id="text5895-4"
-         y="109.32867"
-         x="350.09189"
-         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-           y="109.32867"
-           x="350.09189"
-           id="tspan5893-9"
-           sodipodi:role="line">NEEDS</tspan></text>
-      <g
-         transform="translate(-67.215982,-95.159062)"
-         id="g6060-7">
-        <rect
-           style="fill:#fdb165;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect5966-2-0"
-           width="50"
-           height="50"
-           x="387.85715"
-           y="242.40952"
-           ry="2.1479101" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="396.89981"
-           y="282.40686"
-           id="text5891-4-1"><tspan
-             sodipodi:role="line"
-             id="tspan5889-7-0"
-             x="396.89981"
-             y="282.40686">U</tspan></text>
-      </g>
-      <g
-         transform="translate(-86.911814,-206.69223)"
-         id="g6080-4">
-        <rect
-           ry="2.1479101"
-           y="275.98093"
-           x="384.28571"
-           height="50"
-           width="50"
-           id="rect5966-3-0-2"
-           style="fill:#478deb;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="395.54703"
-           y="315.82892"
-           id="text5891-5-9"><tspan
-             sodipodi:role="line"
-             id="tspan5889-6-7"
-             x="395.54703"
-             y="315.82892">T</tspan></text>
-      </g>
-      <g
-         transform="translate(-71.586242,-318.10744)"
-         id="g6100-3">
-        <rect
-           ry="2.1479101"
-           y="309.55237"
-           x="392.14285"
-           height="50"
-           width="50"
-           id="rect5966-3-9-7-6"
-           style="fill:#63628c;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="402.88455"
-           y="349.59238"
-           id="text5891-3-6"><tspan
-             sodipodi:role="line"
-             id="tspan5889-0-3"
-             x="402.88455"
-             y="349.59238">S</tspan></text>
-      </g>
-      <g
-         transform="translate(83.806026,-18.129112)"
-         id="g5996-2-6">
-        <rect
-           style="fill:#63628c;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect5966-3-9-1"
-           width="50"
-           height="50"
-           x="392.24457"
-           y="165.26666"
-           ry="2.1479101" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="403.69791"
-           y="205.328"
-           id="text5887-9-8"><tspan
-             sodipodi:role="line"
-             id="tspan5885-3-6"
-             x="403.69791"
-             y="205.328">L</tspan></text>
-      </g>
-    </g>
-    <g
-       id="g6432">
-      <g
-         transform="translate(166.49997,144.27663)"
-         id="g5964-9">
-        <rect
-           style="fill:#ff8e99;fill-opacity:1;stroke:#293039;stroke-width:2.75691056;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect5959-8"
-           width="47.243088"
-           height="47.243088"
-           x="310.59277"
-           y="165.45757"
-           ry="2.0294783" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="319.29926"
-           y="204.11911"
-           id="text5879-5"><tspan
-             sodipodi:role="line"
-             id="tspan5877-8"
-             x="319.29926"
-             y="204.11911"
-             style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">C</tspan></text>
-      </g>
-      <g
-         transform="translate(-44.294645,203.29444)"
-         id="g6115-75">
-        <rect
-           style="fill:#fdb165;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect5966-6"
-           width="50"
-           height="50"
-           x="597.14282"
-           y="130.26666"
-           ry="2.1479101" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="605.84369"
-           y="170.30666"
-           id="text5883-7"><tspan
-             sodipodi:role="line"
-             id="tspan5881-25"
-             x="605.84369"
-             y="170.30666"
-             style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">A</tspan></text>
-      </g>
-      <g
-         transform="translate(184.96972,246.08908)"
-         id="g5996-8">
-        <rect
-           style="fill:#478deb;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect5966-3-4"
-           width="50"
-           height="50"
-           x="392.24457"
-           y="165.26666"
-           ry="2.1479101" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="403.69791"
-           y="205.328"
-           id="text5887-5"><tspan
-             sodipodi:role="line"
-             id="tspan5885-4"
-             x="403.69791"
-             y="205.328">L</tspan></text>
-      </g>
-      <g
-         transform="translate(70.714285,185.44622)"
-         id="g6040-0">
-        <rect
-           ry="2.1479101"
-           y="327.40952"
-           x="405"
-           height="50"
-           width="50"
-           id="rect5966-3-9-2-7"
-           style="fill:#ff8e99;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="412.76266"
-           y="367.44952"
-           id="text5891-40"><tspan
-             sodipodi:role="line"
-             id="tspan5889-67"
-             x="412.76266"
-             y="367.44952">O</tspan></text>
-      </g>
-      <text
-         id="text5895-6"
-         y="466.43573"
-         x="468.41562"
-         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:85.33333588px;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-           y="466.43573"
-           x="468.41562"
-           id="tspan5893-4"
-           sodipodi:role="line">N</tspan></text>
-      <g
-         transform="translate(9.6244045,246.90797)"
-         id="g6060-76">
-        <rect
-           style="fill:#fdb165;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect5966-2-04"
-           width="50"
-           height="50"
-           x="387.85715"
-           y="242.40952"
-           ry="2.1479101" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="396.89981"
-           y="282.40686"
-           id="text5891-4-6"><tspan
-             sodipodi:role="line"
-             id="tspan5889-7-4"
-             x="396.89981"
-             y="282.40686">U</tspan></text>
-      </g>
-      <g
-         transform="translate(-10.071425,135.37481)"
-         id="g6080-7">
-        <rect
-           ry="2.1479101"
-           y="275.98093"
-           x="384.28571"
-           height="50"
-           width="50"
-           id="rect5966-3-0-0"
-           style="fill:#478deb;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="395.54703"
-           y="315.82892"
-           id="text5891-5-6"><tspan
-             sodipodi:role="line"
-             id="tspan5889-6-4"
-             x="395.54703"
-             y="315.82892">T</tspan></text>
-      </g>
-      <g
-         transform="translate(5.2541445,23.959597)"
-         id="g6100-2">
-        <rect
-           ry="2.1479101"
-           y="309.55237"
-           x="392.14285"
-           height="50"
-           width="50"
-           id="rect5966-3-9-7-7"
-           style="fill:#63628c;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="402.88455"
-           y="349.59238"
-           id="text5891-3-4"><tspan
-             sodipodi:role="line"
-             id="tspan5889-0-6"
-             x="402.88455"
-             y="349.59238">S</tspan></text>
-      </g>
-      <g
-         transform="translate(160.64642,323.93792)"
-         id="g5996-2-5">
-        <rect
-           style="fill:#63628c;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect5966-3-9-8"
-           width="50"
-           height="50"
-           x="392.24457"
-           y="165.26666"
-           ry="2.1479101" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:42.66666794px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e7ebf0;fill-opacity:1;stroke:#293039;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           x="403.69791"
-           y="205.328"
-           id="text5887-9-0"><tspan
-             sodipodi:role="line"
-             id="tspan5885-3-0"
-             x="403.69791"
-             y="205.328">L</tspan></text>
-      </g>
-    </g>
+     transform="translate(-82.331245,-278.04016)"
+     font-family="Nunito"
+     font-size="37.333px"
+     font-weight="900"
+     letter-spacing="0px"
+     stroke="#293039"
+     stroke-width="2"
+     word-spacing="0px"
+     id="g21300">
+    <text
+       x="140.02031"
+       y="340.79321"
+       fill="#293039"
+       style="line-height:1.25;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal"
+       xml:space="preserve"
+       id="text21294"><tspan
+         x="140.02031"
+         y="340.79321"
+         id="tspan21292">Callouts</tspan></text>
+    <text
+       x="142.02031"
+       y="338.79321"
+       fill="#e7ebf0"
+       style="line-height:1.25;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal"
+       xml:space="preserve"
+       id="text21298"><tspan
+         x="142.02031"
+         y="338.79321"
+         id="tspan21296">Callouts</tspan></text>
   </g>
   <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="C" />
+     transform="translate(-82.331245,-282.04016)"
+     font-family="Nunito"
+     font-size="37.333px"
+     font-weight="900"
+     letter-spacing="0px"
+     stroke="#293039"
+     stroke-width="2"
+     word-spacing="0px"
+     id="g21310">
+    <text
+       x="80.941933"
+       y="311.69592"
+       fill="#293039"
+       style="line-height:1.25;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal"
+       xml:space="preserve"
+       id="text21304"><tspan
+         x="80.941933"
+         y="311.69592"
+         id="tspan21302">Needs</tspan></text>
+    <text
+       x="82.941933"
+       y="309.69592"
+       fill="#e7ebf0"
+       style="line-height:1.25;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal"
+       xml:space="preserve"
+       id="text21308"><tspan
+         x="82.941933"
+         y="309.69592"
+         id="tspan21306">Needs</tspan></text>
+  </g>
 </svg>

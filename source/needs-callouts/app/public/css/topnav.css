@@ -14,7 +14,7 @@
     background-color: transparent;
     /* background-color: var(--color-black); */
     z-index: 5;
-    transition: background-color 0.3s ease 0;
+    /* transition: background-color 250ms ease 0s; */
     padding: 2vw 3.5vw;
 }
 
